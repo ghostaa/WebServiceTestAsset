@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="WsMapperUnitCase" default="WsMapperUnitCase" basedir=".">
+	<target name="WsMapperUnitCase">
+		<TestUnitCase id="WsMapperUnitCase"
+		              jarProject="WsMapperUnitCase"
+		              category="fvt"
+		              jarsrc="src"
+		              testCaseClass="WsMapperTestCases"
+		              instrpath="bttcore.jar"
+		              jars="bttcore.jar">
+		</TestUnitCase>
+	</target>
+</project>

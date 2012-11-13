@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<format.xml>
+	
+	<!-- *************For new UT cases(Context to Object)**************** -->
+
+	<!-- Context to java.util.List -->
+	<fmtDef id="fmt_Context2List">
+		<wsMapperConverter dataName="KColl_Context2List"
+			isPrimitive="false" javaClass="java.util.List[java.lang.String]">
+			<mapper from="IColl_Context2List.*" to="array.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to String[] -->
+	<fmtDef id="fmt_Context2StringArray">
+		<wsMapperConverter dataName="KColl_Context2StringArray"
+			isPrimitive="false" javaClass="java.lang.String[]">
+			<mapper from="IColl_Context2StringArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to int[] -->
+	<fmtDef id="fmt_Context2IntArray">
+		<wsMapperConverter dataName="KColl_Context2IntArray"
+			isPrimitive="false" javaClass="int[]">
+			<mapper from="IColl_Context2IntArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to float[] -->
+	<fmtDef id="fmt_Context2FloatArray">
+		<wsMapperConverter dataName="KColl_Context2FloatArray"
+			isPrimitive="false" javaClass="float[]">
+			<mapper from="IColl_Context2FloatArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to long[] -->
+	<fmtDef id="fmt_Context2LongArray">
+		<wsMapperConverter dataName="Ctxt_Context2LongArray"
+			isPrimitive="false" javaClass="long[]">
+			<mapper from="IColl_Context2LongArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to double[] -->
+	<fmtDef id="fmt_Context2DoubleArray">
+		<wsMapperConverter dataName="KColl_Context2DoubleArray"
+			isPrimitive="false" javaClass="double[]">
+			<mapper from="IColl_Context2DoubleArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to char[] -->
+	<fmtDef id="fmt_Context2CharArray">
+		<wsMapperConverter dataName="KColl_Context2CharArray"
+			isPrimitive="false" javaClass="char[]">
+			<mapper from="IColl_Context2CharArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to short[] -->
+	<fmtDef id="fmt_Context2ShortArray">
+		<wsMapperConverter dataName="KColl_Context2ShortArray"
+			isPrimitive="false" javaClass="short[]">
+			<mapper from="IColl_Context2ShortArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to byte[] -->
+	<fmtDef id="fmt_Context2ByteArray">
+		<wsMapperConverter dataName="KColl_Context2ByteArray"
+			isPrimitive="false" javaClass="byte[]">
+			<mapper from="IColl_Context2ByteArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to boolean[] -->
+	<fmtDef id="fmt_Context2BooleanArray">
+		<wsMapperConverter dataName="KColl_Context2BooleanArray"
+			isPrimitive="false" javaClass="boolean[]">
+			<mapper from="IColl_Context2BooleanArray.*" to="array.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to String -->
+	<fmtDef id="fmt_Context2String">
+		<wsMapperConverter isPrimitive="false" javaClass="java.lang.String">
+			<mapper from="strField" to="*" byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to Boolean -->
+	<fmtDef id="fmt_Context2Boolean">
+		<wsMapperConverter isPrimitive="false" javaClass="java.lang.Boolean">
+			<mapper from="booleanField" to="*" byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to Number(Integer) -->
+	<fmtDef id="fmt_Context2Integer">
+		<wsMapperConverter isPrimitive="false" javaClass="java.lang.Integer">
+			<mapper from="integerField" to="*" byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to Character -->
+	<fmtDef id="fmt_Context2Character">
+		<wsMapperConverter isPrimitive="false" javaClass="java.lang.Character">
+			<mapper from="characterField" to="*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Context to JavaBean -->
+	<fmtDef id="fmt_Context2JavaBean">
+		<wsMapperConverter dataName="Ctxt_Context2JavaBean"
+			isPrimitive="false" javaClass="com.ibm.btt.base.ws.format.test.bean.JavaBean">
+			<mapper from="byteField" to="primitiveByte" byReference="false"
+				append="ignore" />
+			<mapper from="charField" to="primitiveChar" byReference="true"
+				append="ignore" />
+			<mapper from="shortField" to="primitiveShort" byReference="false"
+				append="ignore" />
+			<mapper from="intField" to="primitiveInt" byReference="false"
+				append="ignore" />
+			<mapper from="longField" to="primitiveLong" byReference="false"
+				append="ignore" />
+			<mapper from="floatField" to="primitiveFloat" byReference="false"
+				append="ignore" />
+			<mapper from="doubleField" to="primitiveDouble" byReference="false"
+				append="ignore" />
+
+			<!--  mapper from="IColl_Context2JavaBean_ByteArray.*" to="primitiveByteArray.*"
+				byReference="false" append="ignore" /-->
+			<mapper from="IColl_Context2JavaBean_CharArray.*" to="primitiveCharArray.*"
+				byReference="true" append="ignore" />
+			<mapper from="IColl_Context2JavaBean_ShortArray.*" to="primitiveShortArray.*"
+				byReference="false" append="ignore" />
+			<mapper from="IColl_Context2JavaBean_IntArray.*" to="primitiveIntArray.*"
+				byReference="false" append="ignore" />
+			<mapper from="IColl_Context2JavaBean_LongArray.*" to="primitiveLongArray.*"
+				byReference="false" append="ignore" />
+			<mapper from="IColl_Context2JavaBean_FloatArray.*" to="primitiveFloatArray.*"
+				byReference="false" append="ignore" />
+			<mapper from="IColl_Context2JavaBean_DoubleArray.*" to="primitiveDoubleArray.*"
+				byReference="false" append="ignore" />
+
+			<mapper from="strObjectField" to="stringObject" byReference="false"
+				append="ignore" />
+
+			<mapper from="IColl_Context2JavaBean_StringArray.*" to="stringObjectArray.*"
+				byReference="false" append="ignore" />
+
+			<mapper from="IColl_Context2JavaBean_ArrayList.*" to="stringObjectList.*"
+				byReference="false" append="ignore" />
+
+			<mapper
+				from="KColl_Context2JavaBean_SubJavaBean.strObjectFieldInSubJavaBean"
+				to="subJavaBean.someThing" byReference="false" append="ignore" />
+			<mapper from="KColl_Context2JavaBean_SubJavaBean.intFieldInSubJavaBean"
+				to="subJavaBean.intValue" byReference="false" append="ignore" />
+
+			<mapper
+				from="IColl_Context2JavaBean_SubJavaBeanArray.*.strObjectFieldInSubJavaBean"
+				to="subJavaBeanArray.*.someThing" byReference="false" append="ignore" />
+			<mapper
+				from="IColl_Context2JavaBean_SubJavaBeanArray.*.intFieldInSubJavaBean"
+				to="subJavaBeanArray.*.intValue" byReference="false" append="ignore" />
+
+			<mapper
+				from="IColl_Context2JavaBean_SubJavaBeanList.*.strObjectFieldInSubJavaBean"
+				to="subJavaBeanList.*.someThing" byRefernce="false" append="ignore" />
+			<mapper
+				from="IColl_Context2JavaBean_SubJavaBeanList.*.intFieldInSubJavaBean"
+				to="subJavaBeanList.*.intValue" byRefernce="false" append="ignore" />
+
+		</wsMapperConverter>
+	</fmtDef>
+
+
+	<!--
+		*************For new UT cases(Object to Context)****************
+	-->
+
+	<!-- java.util.List to Context -->
+	<fmtDef id="fmt_List2Context">
+		<wsMapperConverter isPrimitive="false"
+			javaClass="java.util.List[java.lang.String]">
+			<mapper from="array.*" to="IColl_List2Context.*" byReference="true"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+
+	<!-- String[] to Context -->
+	<fmtDef id="fmt_StringArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="java.lang.String[]">
+			<mapper from="array.*" to="IColl_StringArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Bean[] to Context -->
+	<fmtDef id="fmt_BeanArray2Context">
+		<wsMapperConverter isPrimitive="false"
+			javaClass="com.ibm.base.ws.format.bean.Bean[]">
+			<mapper from="array.*.name" to="IColl_BeanArray2Context.*.strObjectFieldInBean"
+				byReference="false" append="false" />
+			<mapper from="array.*.age" to="IColl_BeanArray2Context.*.intFieldInBean"
+				byReference="false" append="flase" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- byte[] to Context -->
+	<fmtDef id="fmt_ByteArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="byte[]">
+			<mapper from="array.*" to="IColl_ByteArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- char[] to Context -->
+	<fmtDef id="fmt_CharArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="char[]">
+			<mapper from="array.*" to="IColl_CharArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- boolean[] to Context -->
+	<fmtDef id="fmt_BooleanArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="boolean[]">
+			<mapper from="array.*" to="IColl_BooleanArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- short[] to Context -->
+	<fmtDef id="fmt_ShortArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="short[]">
+			<mapper from="array.*" to="IColl_ShortArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- int[] to Context -->
+	<fmtDef id="fmt_IntArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="int[]">
+			<mapper from="array.*" to="IColl_IntArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- long[] to Context -->
+	<fmtDef id="fmt_LongArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="long[]">
+			<mapper from="array.*" to="IColl_LongArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- float[] to Context -->
+	<fmtDef id="fmt_FloatArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="float[]">
+			<mapper from="array.*" to="IColl_FloatArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- double[] to Context -->
+	<fmtDef id="fmt_DoubleArray2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="double[]">
+			<mapper from="array.*" to="IColl_DoubleArray2Context.*"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- String to Context -->
+	<fmtDef id="fmt_String2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="java.lang.String">
+			<mapper from="=*" to="stringObject" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="fmt_JavaBean2Context">
+		<wsMapperConverter isPrimitive="false" javaClass="com.ibm.btt.base.ws.format.test.bean.JavaBean">
+			<mapper from="primitiveByte" to="byteField" byReference="false" append="false" />
+			<mapper from="primitiveChar" to="charField" byReference="false" append="false" />
+			<mapper from="primitiveShort" to="shortField" byReference="false" append="false" />
+			<mapper from="primitiveInt" to="intField" byReference="false" append="false" />
+			<mapper from="primitiveLong" to="longField" byReference="false" append="false" />
+			<mapper from="primitiveFloat" to="floatField" byReference="false" append="false" />
+			<mapper from="primitiveDouble" to="doubleField" byReference="false" append="false" />
+			
+			<!-- mapper from="primitiveByteArray.*" to="IColl_JavaBean2Context_ByteArray.*" 
+				byReference="false" append="false"/-->
+			<mapper from="primitiveCharArray.*" to="IColl_JavaBean2Context_CharArray.*" 
+				byReference="false" append="false"/>
+			<mapper from="primitiveShortArray.*" to="IColl_JavaBean2Context_ShortArray.*" 
+				byReference="false" append="false"/>
+			<mapper from="primitiveIntArray.*" to="IColl_JavaBean2Context_IntArray.*" 
+				byReference="false" append="false"/>
+			<mapper from="primitiveLongArray.*" to="IColl_JavaBean2Context_LongArray.*" 
+				byReference="false" append="false"/>
+			<mapper from="primitiveFloatArray.*" to="IColl_JavaBean2Context_FloatArray.*" 
+				byReference="false" append="false"/>
+			<mapper from="primitiveDoubleArray.*" to="IColl_JavaBean2Context_DoubleArray.*" 
+				byReference="false" append="false"/>
+				
+			<mapper from="stringObject" to="strObjectField" byReference="false" append="false" />
+			
+			<mapper from="stringObjectArray.*" to="IColl_JavaBean2Context_StringArray.*" 
+				byReference="false" append="false"/>
+				
+			<mapper from="stringObjectList.*" to="IColl_JavaBean2Context_ArrayList.*" 
+				byReference="false" append="false"/>
+			
+			<mapper from="subJavaBean.someThing" to="KColl_JavaBean2Context_SubJavaBean.strObjectFieldInSubJavaBean" byRefernce="false" append="false" />
+			<mapper from="subJavaBean.intValue" to="KColl_JavaBean2Context_SubJavaBean.intFieldInSubJavaBean" byRefernce="false" append="false" />
+			
+			<mapper from="subJavaBeanArray.*.someThing" to="IColl_JavaBean2Context_SubJavaBeanArray.*.strObjectFieldInSubJavaBean" byReference="false" append="flase"/>
+			<mapper from="subJavaBeanArray.*.intValue" to="IColl_JavaBean2Context_SubJavaBeanArray.*.intFieldInSubJavaBean" byReference="false" append="ignore"/>
+		
+			<mapper from="subJavaBeanList.*.someThing" to="IColl_JavaBean2Context_SubJavaBeanList.*.strObjectFieldInSubJavaBean" byReference="false" append="false"/>
+			<mapper from="subJavaBeanList.*.intValue" to="IColl_JavaBean2Context_SubJavaBeanList.*.intFieldInSubJavaBean" byReference="false" append="ignore"/>
+		
+		</wsMapperConverter>
+	</fmtDef>
+</format.xml>

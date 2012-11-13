@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context.xml>
+	
+<!-- *************For new UT cases(Context to Object)**************** -->
+	
+	<!-- Context to java.util.List -->
+	<context id="Ctxt_Context2List" type="test">
+		<refKColl refId="KColl_Context2List" />
+	</context>
+	
+	<!-- Context to String[] -->
+	<context id="Ctxt_Context2StringArray" type="test">
+		<refKColl refId="KColl_Context2StringArray" />
+	</context>
+	
+	<!-- Context to int[] -->
+	<context id="Ctxt_Context2IntArray" type="test">
+		<refKColl refId="KColl_Context2IntArray" />
+	</context>
+	
+	<!-- Context to float[] -->
+	<context id="Ctxt_Context2FloatArray" type="test">
+		<refKColl refId="KColl_Context2FloatArray" />
+	</context>
+	
+	<!-- Context to long[] -->
+	<context id="Ctxt_Context2LongArray" type="test">
+		<refKColl refId="KColl_Context2LongArray" />
+	</context>
+	
+	<!-- Context to double[] -->
+	<context id="Ctxt_Context2DoubleArray" type="test">
+		<refKColl refId="KColl_Context2DoubleArray" />
+	</context>
+	
+	<!-- Context to char[] -->
+	<context id="Ctxt_Context2CharArray" type="test">
+		<refKColl refId="KColl_Context2CharArray" />
+	</context>
+	
+	<!-- Context to short[] -->
+	<context id="Ctxt_Context2ShortArray" type="test">
+		<refKColl refId="KColl_Context2ShortArray" />
+	</context>
+	
+	<!-- Context to byte[] -->
+	<context id="Ctxt_Context2ByteArray" type="test">
+		<refKColl refId="KColl_Context2ByteArray" />
+	</context>
+	
+	<!-- Context to boolean[] -->
+	<context id="Ctxt_Context2BooleanArray" type="test">
+		<refKColl refId="KColl_Context2BooleanArray" />
+	</context>
+	
+	<!-- Context to String -->
+	<context id="Ctxt_Context2String" type="test">
+		<refKColl refId="KColl_Context2String" />
+	</context>
+	
+	<!-- Context to Boolean -->
+	<context id="Ctxt_Context2Boolean" type="test">
+		<refKColl refId="KColl_Context2Boolean" />
+	</context>
+	
+	<!-- Context to Number(Integer) -->
+	<context id="Ctxt_Context2Integer" type="test">
+		<refKColl refId="KColl_Context2Integer" />
+	</context>
+	
+	<!-- Context to Character -->
+	<context id="Ctxt_Context2Character" type="test">
+		<refKColl refId="KColl_Context2Character" />
+	</context>
+	
+	<!-- Context to JavaBean -->
+	<context id="Ctxt_Context2JavaBean" type="test">
+		<refKColl refId="KColl_Context2JavaBean" />
+	</context>
+	
+	<!-- *************For new UT cases(Object to Context)**************** -->
+	
+	<!-- java.util.List to Context -->
+	<context id="Ctxt_List2Context" type="test">
+		<refKColl refId="KColl_List2Context" />
+	</context>
+	
+	<!-- String[] to Context -->
+	<context id="Ctxt_StringArray2Context" type="test">
+		<refKColl refId="KColl_StringArray2Context" />
+	</context>
+	
+	<!-- Bean[] to Context -->
+	<context id="Ctxt_BeanArray2Context" type="test">
+		<refKColl refId="KColl_BeanArray2Context" />
+	</context>
+	
+	<!-- byte[] to Context -->
+	<context id="Ctxt_ByteArray2Context" type="test">
+		<refKColl refId="KColl_ByteArray2Context" />
+	</context>
+	
+	<!-- char[] to Context -->
+	<context id="Ctxt_CharArray2Context" type="test">
+		<refKColl refId="KColl_CharArray2Context" />
+	</context>
+	
+	<!-- boolean[] to Context -->
+	<context id="Ctxt_BooleanArray2Context" type="test">
+		<refKColl refId="KColl_BooleanArray2Context" />
+	</context>
+	
+	<!-- short[] to Context -->
+	<context id="Ctxt_ShortArray2Context" type="test">
+		<refKColl refId="KColl_ShortArray2Context" />
+	</context>
+	
+	<!-- int[] to Context -->
+	<context id="Ctxt_IntArray2Context" type="test">
+		<refKColl refId="KColl_IntArray2Context" />
+	</context>
+	
+	<!-- long[] to Context -->
+	<context id="Ctxt_LongArray2Context" type="test">
+		<refKColl refId="KColl_LongArray2Context" />
+	</context>
+	
+	<!-- float[] to Context -->
+	<context id="Ctxt_FloatArray2Context" type="test">
+		<refKColl refId="KColl_FloatArray2Context" />
+	</context>
+	
+	<!-- double[] to Context  -->
+	<context id="Ctxt_DoubleArray2Context" type="test">
+		<refKColl refId="KColl_DoubleArray2Context" />
+	</context>
+	
+	<!-- String to Context  -->
+	<context id="Ctxt_String2Context" type="test">
+		<refKColl refId="KColl_String2Context" />
+	</context>
+	
+	<!-- JavaBean to Context  -->
+	<context id="Ctxt_JavaBean2Context" type="test">
+		<refKColl refId="KColl_JavaBean2Context" />
+	</context>
+</context.xml>

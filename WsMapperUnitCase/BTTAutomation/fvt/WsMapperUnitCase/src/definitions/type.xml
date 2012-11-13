@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<type.xml>
+	<type id="String" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"
+			initialValue="abc123">
+			<Converter convTypes="default"
+				implClass="com.ibm.btt.base.types.impl.StringConverter" />
+			<Validator implClass="com.ibm.btt.base.types.impl.StringValidator">
+				<param id="isMandatory" value="no" />
+				<param id="minimumLength" value="8" />
+				<param id="maximumLength" value="32" />
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="IntNumber" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default,ws,xml"
+				implClass="com.ibm.btt.base.types.impl.NumberConverter">
+				<param id="numberType" value="integer" />
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param id="numberType" value="integer" />
+				<param id="maximumNumber" value="2147483647" />
+				<param id="minimumNumber" value="-2147483648" />
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="TestType" implClass="com.ibm.btt.base.KeyedCollection">
+		<KCollPropertyDescriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.KCollPropertyDescriptor" />
+		<Descriptor id="strField" refType="String" initialValue="lst"
+			isMandatory="true" />
+		<Descriptor id="intField" refType="IntNumber" initialValue="130"
+			isMandatory="true" />
+	</type>
+
+	<type id="WMCBW1116Sub1" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"
+			initialValue="abc123">
+			<Converter convTypes="default,ws,xml"
+				implClass="com.ibm.btt.base.types.impl.StringConverter" />
+			<Validator implClass="com.ibm.btt.base.types.impl.StringValidator">
+				<param id="isMandatory" value="yes" />
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="WMCBW1116Sub2" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor"
+			initialValue="abc123">
+			<Converter convTypes="default,ws,xml"
+				implClass="com.ibm.btt.base.types.impl.StringConverter" />
+			<Validator implClass="com.ibm.btt.base.types.impl.StringValidator">
+				<param id="isMandatory" value="no" />
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="WMCBW1116Sub3" implClass="com.ibm.btt.base.DataField">
+		<Descriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.impl.SimplePropertyDescriptor">
+			<Converter convTypes="default,ws,xml"
+				implClass="com.ibm.btt.base.types.impl.NumberConverter">
+			</Converter>
+			<Validator implClass="com.ibm.btt.base.types.impl.NumberValidator">
+				<param id="numberType" value="integer" />
+			</Validator>
+		</Descriptor>
+	</type>
+
+	<type id="WMCBW1116" implClass="com.ibm.btt.base.KeyedCollection">
+		<KCollPropertyDescriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.KCollPropertyDescriptor" />
+		<Descriptor id="strMandatory" refType="WMCBW1116Sub1"
+			initialValue="lst" isMandatory="true" />
+		<Descriptor id="strOptional" refType="WMCBW1116Sub2" />
+		<Descriptor id="intOptional" refType="WMCBW1116Sub3"
+			initialValue="123" />
+	</type>
+
+	<type id="WMCBW1116PartConvTypeWS" implClass="com.ibm.btt.base.KeyedCollection">
+		<KCollPropertyDescriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.KCollPropertyDescriptor" />
+		<Descriptor id="strMandatory" refType="WMCBW1116Sub1"
+			initialValue="lst" isMandatory="true" />
+		<Descriptor id="strOptional" refType="WMCBW1116Sub2" />
+		<Descriptor id="intOptional" refType="WMCBW1116Sub3"
+			initialValue="123" />
+		<Descriptor id="strNoWsConvMandatory" refType="String"
+			initialValue="lst" isMandatory="true" />
+	</type>
+
+	<type id="WMCBW1117" implClass="com.ibm.btt.base.IndexedCollection">
+		<ICollPropertyDescriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.ICollPropertyDescriptor" />
+		<Descriptor id="InnerKColl" refType="WMCBW1116" />
+	</type>
+
+	<type id="WMCBW1117PartConvTypeWS" implClass="com.ibm.btt.base.IndexedCollection">
+		<ICollPropertyDescriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.ICollPropertyDescriptor" />
+		<Descriptor id="InnerKCollPartConvTypeWS" refType="WMCBW1116PartConvTypeWS" />
+	</type>
+
+	<type id="WMCBW11213" implClass="com.ibm.btt.base.KeyedCollection">
+		<KCollPropertyDescriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.KCollPropertyDescriptor" />
+		<Descriptor id="strMandatory" refType="WMCBW1116Sub1"
+			initialValue="lst" isMandatory="true" />
+		<Descriptor id="strOptional" refType="WMCBW1116Sub2" />
+		<Descriptor id="intOptional" refType="WMCBW1116Sub3"
+			initialValue="123" />
+	</type>
+
+	<type id="WMCBW11214" implClass="com.ibm.btt.base.IndexedCollection">
+		<ICollPropertyDescriptor id="typeDefault"
+			implClass="com.ibm.btt.base.types.ICollPropertyDescriptor" />
+		<Descriptor id="InnerKColl" refType="WMCBW11213" />
+	</type>
+	
+</type.xml>
