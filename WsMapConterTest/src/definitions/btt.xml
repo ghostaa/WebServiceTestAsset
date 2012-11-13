@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<btt.xml>
+	<kColl id="components">
+		<kColl id="settings" initializer="com.ibm.btt.config.impl.GlobalSettings">
+			<field id="initializer" value="com.ibm.btt.config.impl.GlobalSettings" />
+			<field id="modularity" value="mixed" />
+			<kColl id="paths">
+				<field id="entities" value="fromJAR" />
+			</kColl>
+			<field id="showProgressBar" value="no" />
+			<field id="bufferSize" value="200000" />
+			<field id="queueBufferSize" value="20" />
+			<kColl id="initialization">
+				<field id="enableFormatsCache" value="false" />
+				<field id="enableOperationsCache" value="true" />
+				<field id="sessionPersistence" value="false" />
+				<field id="sessionAffinity" value="false" />
+				<field id="enableProcessorsCache" value="true" />
+				<field id="shareDataDescriptors" value="true" />
+			</kColl>
+		</kColl>
+
+		<kColl id="trace" initializer="com.ibm.btt.base.TraceInitializer">
+			<field id="initializer" value="com.ibm.btt.base.TraceInitializer" />
+			<field id="traceTargetFactoryImplClass"
+				value="com.ibm.btt.base.BTTLogFactoryToWASImp" />
+			<field id="traceLevels" value="DEBUG" />
+			<kColl id="requestersComponents">
+				<traceRequester id="com.ibm.btt.*" trace="yes" traceLevels="DEBUG" />
+				<traceRequester id="com.ibm.btt.base.*" trace="no" traceLevels="DEBUG" />
+				<traceRequester id="com.ibm.btt.base.ContextFactory" trace="yes"
+					traceLevels="DEBUG" />
+				<!-- Core components -->
+				<traceRequester id="#CORE" trace="yes" traceLevels="DEBUG" />
+			</kColl>
+		</kColl>
+
+		<kColl id="type" initializer="com.ibm.btt.base.types.TypeInitializer">
+			<field id="initializer" value="com.ibm.btt.base.types.TypeInitializer" />
+			<field id="extFile" value="type.xml" />
+			<kColl id="classTable">
+				<field description="compound" id="type" value="com.ibm.btt.base.types.DSEType" />
+				<field id="stringConverter" />
+				<field id="dateConverter" />
+				<field id="dateValidator" />
+			</kColl>
+		</kColl>
+
+		<kColl id="data" initializer="com.ibm.btt.base.DataInitializer">
+			<field id="extFile" value="data.xml" />
+			<field id="initializer" value="com.ibm.btt.base.DataInitializer" />
+			<kColl id="classTable">
+				<!-- Following are default configuration provided by BTT-->
+				<field id="field" value="com.ibm.btt.base.DataField" />
+				<field id="iColl" value="com.ibm.btt.base.IndexedCollection"
+					description="compound" />
+				<field id="kColl" value="com.ibm.btt.base.KeyedCollection"
+					description="compound" />
+				<field id="bColl" value="com.ibm.btt.bean.BeanCollection"
+					description="compound" />
+			</kColl>
+		</kColl>
+
+		<kColl id="service" initializer="com.ibm.btt.base.ServiceInitializer">
+			<field id="extFile" value="service.xml" />
+			<field id="initializer" value="com.ibm.btt.base.ServiceInitializer" />
+			<kColl id="classTable">
+				<field id="JaxRpcConnector"
+					value="com.ibm.btt.services.ws.jaxrpc.BTTJaxRpcConnector" />
+				<field id="JaxWsConnector"
+					value="com.ibm.btt.services.ws.jaxws.BTTJaxWsConnector" />
+			</kColl>
+		</kColl>
+
+		<kColl id="context" initializer="com.ibm.btt.base.ContextInitializer">
+			<field id="extFile" value="context.xml" />
+			<field id="initializer" value="com.ibm.btt.base.ContextInitializer" />
+			<kColl id="classTable">
+				<field id="context" value="com.ibm.btt.base.LocalContextImpl" />
+			</kColl>
+		</kColl>
+
+		<kColl id="format" initializer="com.ibm.btt.base.FormatInitializer">
+			<field id="extFile" value="format.xml" />
+			<field id="initializer" value="com.ibm.btt.base.FormatInitializer" />
+			<field id="AutoOpenUnformatIndex" value="no" />
+			<kColl id="classTable">
+				<field id="refFmt" />
+				<!-- Constant formatter -->
+				<field id="constant" value="com.ibm.btt.base.ConstantFormat" />
+				<!-- Concrete field formatter -->
+				<field id="fDate" value="com.ibm.btt.base.DateFormat" />
+				<field id="fFloat" value="com.ibm.btt.base.FloatFormat" />
+				<field id="fInteger" value="com.ibm.btt.base.IntegerFormat" />
+				<field id="fBinIntString" value="com.ibm.btt.base.BinaryIntegerStringFormat" />
+				<field id="fNumString" value="com.ibm.btt.base.NumericStringFormat" />
+				<field id="fPacked" value="com.ibm.btt.base.PackedFormat" />
+				<field id="fPackedDate" value="com.ibm.btt.base.PackedDateFormat" />
+				<field id="fString" value="com.ibm.btt.base.StringFormat" />
+				<field id="fTime" value="com.ibm.btt.base.TimeFormat" />
+				<!-- Indexed collection formatter -->
+				<field id="iCollF" value="com.ibm.btt.base.IndexedCollectionFormat"
+					description="compound" />
+				<!-- Concrete keyed collection formatter  -->
+				<field id="kCollF" value="com.ibm.btt.base.KeyedCollectionFormat" />
+				<field id="record" value="com.ibm.btt.base.RecordFormat" description="compound" />
+				<field id="drecord" value="com.ibm.btt.base.DynamicRecordFormat" />
+				<field id="fXML" value="com.ibm.btt.base.XMLFormat" description="compound" />
+				<field id="fdXML" value="com.ibm.btt.base.DynamicXMLFormat"
+					description="compound" />
+				<field id="mapperConverter" value="com.ibm.btt.base.DataMapperConverterFormat" />
+				<field id="fTypedData" value="com.ibm.btt.base.TypedDataElementFormat" />
+				<field id="fObject" value="com.ibm.btt.base.ObjectFormat" />
+				<field id="pointer" value="com.ibm.btt.base.DataPointer" description="compound" />
+				<!-- Concrete decorator  -->
+				<field id="nullCheck" value="com.ibm.btt.base.NullCheckDecorator" />
+				<field id="compress" value="com.ibm.btt.base.Compressor" />
+				<field id="codeSetTrans" value="com.ibm.btt.base.CodeSetTranslator" />
+				<field id="delim" value="com.ibm.btt.base.Delimiter" />
+				<field id="fixedLength" value="com.ibm.btt.base.FixedLength" />
+				<field id="id" value="com.ibm.btt.base.Identifier" />
+				<field id="maxLength" value="com.ibm.btt.base.MaximumLength" />
+				<field id="selfLength" value="com.ibm.btt.base.SelfLength" />
+
+				<!-- wsMapperConverter format definition -->
+				<field id="wsMapperConverter" value="com.ibm.btt.base.ws.WSMapperConverter" />
+				<field id="mapper" value="com.ibm.btt.base.DataMapperFormat" />
+			</kColl>
+		</kColl>
+
+		<kColl id="operation" initializer="com.ibm.btt.base.OperationInitializer">
+			<field id="extFile" value="operation.xml" />
+			<field id="initializer" value="com.ibm.btt.base.OperationInitializer" />
+			<kColl id="classTable">
+				<field id="compare" value="com.ibm.btt.base.CompareAssertion" />
+				<field id="elements" value="com.ibm.btt.base.NumOfElementsAssertion" />
+				<field id="exists" value="com.ibm.btt.base.ExistsAssertion" />
+				<field id="wsAccessOp" value="com.ibm.btt.base.ws.WSAccessOp" />
+			</kColl>
+			<!-- Self-defined operation file path -->
+			<kColl id="files"></kColl>
+		</kColl>
+	</kColl>
+</btt.xml>

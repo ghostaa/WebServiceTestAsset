@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataE2ea.xml>
+	<kColl id="primitiveLa" dynamic="false">
+		<field id="intField" value="0" />
+		<iColl id="intIColl" size="1">
+			<field id="intField" value="0" />
+		</iColl>
+
+		<field id="longField" value="0L" />
+		<iColl id="longIColl" size="0">
+			<field id="longField" value="0L" />
+		</iColl>
+
+		<field id="booleanField" value="false" />
+		<iColl id="booleanIColl" size="3">
+			<field id="booleanField" value="false" />
+		</iColl>
+
+		<field id="floatField" value="0.00f" />
+		<iColl id="floatIColl" size="0">
+			<field id="floatField" value="0.00f" />
+		</iColl>
+
+		<field id="doubleField" value="0.00d" />
+		<iColl id="doubleIColl" size="1">
+			<field id="doubleField" value="0.00d" />
+		</iColl>
+
+		<field id="charField" value="64" />
+		<iColl id="charIColl" size="0">
+			<field id="charField" value="64" />
+		</iColl>
+
+		<field id="shortField" value="-128" />
+		<iColl id="shortIColl" size="1">
+			<field id="shortField" value="-128" />
+		</iColl>
+
+		<field id="byteField" value="-64" />
+		<iColl id="byteIColl" size="1">
+			<field id="byteField" value="-128" />
+		</iColl>
+	</kColl>
+
+	<kColl id="simpleLa" dynamic="false">
+		<field id="stringField" value="NULL" />
+		<iColl id="stringIColl" size="0">
+			<field id="stringField" value="NULL" />
+		</iColl>
+
+		<field id="integerField" description="default value is null" />
+		<iColl id="integerIColl" size="3">
+			<field id="integerField" description="default value is null" />
+		</iColl>
+
+		<field id="bigDecimalField" description="default value is null" />
+		<iColl id="bigDecimalIColl" size="4">
+			<field id="bigDecimalField" description="default value is null" />
+		</iColl>
+
+		<field id="dateField" description="default value is null" />
+		<iColl id="dateIColl" size="3">
+			<field id="dateField" description="default value is null" />
+		</iColl>
+
+		<field id="calendarField" description="default value is null" />
+		<iColl id="calendarIColl" size="2">
+			<field id="calendarField" description="default value is null" />
+		</iColl>
+
+		<field id="uuidField" description="default value is null" />
+		<iColl id="uuidIColl" size="0">
+			<field id="uuidField" description="default value is null" />
+		</iColl>
+	</kColl>
+
+	<kColl id="primitiveLaData" dynamic="false">
+		<refData refId="primitiveLa" />
+	</kColl>
+
+	<kColl id="simpleLaData" dynamic="false">
+		<refData refId="simpleLa" />
+	</kColl>
+
+	<kColl id="complexLaData" dynamic="false">
+		<kColl id="complexLa" dynamic="false">
+			<refData refId="primitiveLa" />
+			<refData refId="simpleLa" />
+			<iColl id="primitiveLaIColl" size="0">
+				<refData refId="primitiveLa" />
+			</iColl>
+			<iColl id="simpleLaIColl" size="2">
+				<refData refId="simpleLa" />
+			</iColl>
+			<iColl id="primitiveLaIColl2" size="1">
+				<refData refId="primitiveLa" />
+			</iColl>
+			<iColl id="simpleLaIColl2" size="0">
+				<refData refId="simpleLa" />
+			</iColl>
+		</kColl>
+	</kColl>
+</dataE2ea.xml>

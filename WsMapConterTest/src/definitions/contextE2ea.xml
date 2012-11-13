@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contextE2ea.xml>
+	<context id="primitiveLaDataCtxt" type="test">
+		<refKColl refId="primitiveLaData" />
+	</context>
+	
+	<context id="simpleLaDataCtxt" type="test">
+		<refKColl refId="simpleLaData" />
+	</context>
+	
+	<context id="complexLaDataCtxt" type="test">
+		<refKColl refId="complexLaData" />
+	</context>
+	
+</contextE2ea.xml>

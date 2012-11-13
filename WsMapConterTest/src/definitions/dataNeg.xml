@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data.xml>
+	<kColl id="NEGWMC211" dynamic="false">
+		<field id="field1" value="value1" description="Descriptions for this field" />
+	</kColl>
+
+	<kColl id="NEGWMC212" dynamic="false">
+		<field id="field1" value="value1" description="Descriptions for this field" />
+	</kColl>
+
+	<kColl id="NEGWMC213" dynamic="false">
+		<field id="field1" value="value1" description="Descriptions for this field" />
+	</kColl>
+
+	<kColl id="ExceptionKColl" dynamic="false">
+		<field id="aSimpleField" value="0" />
+		<iColl id="intIColl" size="0">
+			<field id="anInt" value="0" />
+		</iColl>
+		<data id="aSimpleTypedField" refType="IntNumber" />
+	</kColl>
+
+	<bColl id="treateSimpleBean" bean="com.ibm.btt.wsc.mapper.beans.TreateSimpleBean" />
+
+	<bColl id="beanA" bean="treateassimple.test.BeanA" />
+	<bColl id="beanC" bean="treateassimple.test.BeanC" />
+	<kColl id="keyC" dynamic="false">
+		<field id="intField" />
+		<field id="strField" />
+		<field id="dateField" />
+	</kColl>
+	<iColl id="iBeanC" size="1">
+		<refData refId="beanC" />
+	</iColl>
+	<iColl id="iKeyC" size="1">
+		<refData refId="keyC" />
+	</iColl>
+</data.xml>

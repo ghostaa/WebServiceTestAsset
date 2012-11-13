@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<btt.xml>
+	<kColl id="components">
+		<kColl id="settings" initializer="com.ibm.btt.config.impl.GlobalSettings">
+			<field id="initializer" value="com.ibm.btt.config.impl.GlobalSettings" />
+			<field id="modularity" value="mixed" />
+			<kColl id="paths">
+				<field id="entities" value="fromJAR" />
+			</kColl>
+			<field id="showProgressBar" value="no" />
+			<field id="bufferSize" value="200000" />
+			<field id="queueBufferSize" value="20" />
+			<kColl id="initialization">
+				<field id="enableFormatsCache" value="false" />
+				<field id="enableOperationsCache" value="true" />
+				<field id="sessionPersistence" value="false" />
+				<field id="sessionAffinity" value="false" />
+				<field id="enableProcessorsCache" value="true" />
+				<field id="shareDataDescriptors" value="true" />
+			</kColl>
+			<kColl id="beanPropertyConverters">
+				<field id="com.ibm.btt.wsc.mapper.beans.UnCloneableField" value="com.ibm.btt.wsc.mapper.beans.UnCloneableFieldConverter"/>
+			</kColl>
+		</kColl>
+
+		<kColl id="trace" initializer="com.ibm.btt.base.TraceInitializer">
+			<field id="initializer" value="com.ibm.btt.base.TraceInitializer" />
+			<field id="traceTargetFactoryImplClass" value="com.ibm.btt.base.BTTLogFactoryToWASImp" />
+			<field id="traceLevels" value="DEBUG" />
+			<kColl id="requestersComponents">
+				<traceRequester id="com.ibm.btt.*" trace="yes" traceLevels="DEBUG" />
+				<traceRequester id="com.ibm.btt.base.*" trace="no"
+					traceLevels="DEBUG" />
+				<traceRequester id="com.ibm.btt.base.ContextFactory" trace="yes"
+					traceLevels="DEBUG" />
+				<!-- Core components -->
+				<traceRequester id="#CORE" trace="yes" traceLevels="DEBUG" />
+			</kColl>
+		</kColl>
+
+		<kColl id="type" initializer="com.ibm.btt.base.types.TypeInitializer">
+			<field id="initializer" value="com.ibm.btt.base.types.TypeInitializer" />
+			<field id="extFile" value="type.xml" />
+			<kColl id="classTable">
+				<field description="compound" id="type" value="com.ibm.btt.base.types.DSEType" />
+				<field id="stringConverter" />
+				<field id="dateConverter" />
+				<field id="dateValidator" />
+			</kColl>
+		</kColl>
+
+		<kColl id="data" initializer="com.ibm.btt.base.DataInitializer">
+			<field id="extFile" value="dataNeg.xml" />
+			<field id="initializer" value="com.ibm.btt.base.DataInitializer" />
+			<kColl id="classTable">
+				<!-- Following are default configuration provided by BTT -->
+				<field id="field" value="com.ibm.btt.base.DataField" />
+				<field id="iColl" value="com.ibm.btt.base.IndexedCollection"
+					description="compound" />
+				<field id="kColl" value="com.ibm.btt.base.KeyedCollection"
+					description="compound" />
+				<field id="bColl" value="com.ibm.btt.bean.BeanCollection" description="compound" />
+			</kColl>
+		</kColl>
+
+		<kColl id="context" initializer="com.ibm.btt.base.ContextInitializer">
+			<field id="extFile" value="contextNeg.xml" />
+			<field id="initializer" value="com.ibm.btt.base.ContextInitializer" />
+			<kColl id="classTable">
+				<field id="context" value="com.ibm.btt.base.LocalContextImpl" />
+			</kColl>
+		</kColl>
+
+		<kColl id="format" initializer="com.ibm.btt.base.FormatInitializer">
+			<field id="extFile" value="formatNeg.xml" />
+			<field id="initializer" value="com.ibm.btt.base.FormatInitializer" />
+			<field id="AutoOpenUnformatIndex" value="no" />
+			<kColl id="classTable">
+				<!-- wsMapperConverter format definition -->
+				<field id="wsMapperConverter" value="com.ibm.btt.base.ws.WSMapperConverter" />
+				<field id="mapper" value="com.ibm.btt.base.DataMapperFormat" />
+				<field id="mapperConverter" value="com.ibm.btt.base.DataMapperConverterFormat" />
+			</kColl>
+		</kColl>
+	</kColl>
+</btt.xml>

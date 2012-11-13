@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context.xml>
+	<context id="NEGWMC211" type="test">
+		<refKColl refId="NEGWMC211" />
+	</context>
+	
+	<context id="NEGWMC212" type="test">
+		<refKColl refId="NEGWMC212" />
+	</context>
+	
+	<context id="NEGWMC213" type="test">
+		<refKColl refId="NEGWMC213" />
+	</context>
+	
+	<context id="ExceptionCtxt" type="test">
+		<refKColl refId="ExceptionKColl" />
+	</context>
+	
+	<context id="treateSimpleCtxt" type="test">
+		<refKColl refId="treateSimpleBean" />
+	</context>
+</context.xml>

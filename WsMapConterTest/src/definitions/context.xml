@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context.xml>
+	<context id="WMCBW1111" type="test">
+		<refKColl refId="WMCBW1111" />
+	</context>
+
+	<context id="WMCBW1112" type="test">
+		<refKColl refId="WMCBW1112" />
+	</context>
+
+	<context id="WMCBW11131" type="test">
+		<refKColl refId="WMCBW11131" />
+	</context>
+
+	<context id="WMCBW11132" type="test">
+		<refKColl refId="WMCBW11132" />
+	</context>
+
+	<context id="WMCBW11141" type="test">
+		<refKColl refId="WMCBW11141" />
+	</context>
+
+	<context id="WMCBW11142" type="test">
+		<refKColl refId="WMCBW11142" />
+	</context>
+
+	<context id="WMCBW11151" type="test">
+		<refKColl refId="WMCBW11151KColl" />
+	</context>
+
+	<context id="WMCBW11152" type="test">
+		<refKColl refId="WMCBW11152KColl" />
+	</context>
+
+	<context id="WMCBW1116" type="test">
+		<refKColl refId="WMCBW1116KColl" />
+	</context>
+
+	<context id="WMCBW1116PartConvTypeWS" type="test">
+		<refKColl refId="WMCBW1116PartConvTypeWSKColl" />
+	</context>
+
+	<context id="WMCBW1117" type="test">
+		<refKColl refId="WMCBW1117KColl" />
+	</context>
+
+	<context id="WMCBW1117PartConvTypeWS" type="test">
+		<refKColl refId="WMCBW1117PartConvTypeWSKColl" />
+	</context>
+
+	<context id="WMCBW112111" type="test">
+		<refKColl refId="WMCBW112111KColl" />
+	</context>
+
+	<context id="WMCBW1121121" type="test">
+		<refKColl refId="WMCBW1121121KColl" />
+	</context>
+
+	<context id="WMCBW112113" type="test">
+		<refKColl refId="WMCBW112113KColl" />
+	</context>
+
+	<context id="WMCBW112121" type="test">
+		<refKColl refId="WMCBW112121KColl" />
+	</context>
+
+	<context id="WMCBW112122" type="test">
+		<refKColl refId="WMCBW112122KColl" />
+	</context>
+
+	<context id="WMCBW11213" type="test">
+		<refKColl refId="WMCBW11213KColl" />
+	</context>
+
+	<context id="WMCBW11214" type="test">
+		<refKColl refId="WMCBW11214KColl" />
+	</context>
+
+	<context id="WMCBW112222" type="test">
+		<refKColl refId="WMCBW112222KColl" />
+	</context>
+
+	<context id="WMCBW11223" type="test">
+		<refKColl refId="WMCBW11223KColl" />
+	</context>
+
+	<context id="WMCBW11231" type="test">
+		<refKColl refId="WMCBW11231KColl" />
+	</context>
+
+	<context id="WMCWB121" type="test">
+		<refKColl refId="WMCWB121KColl" />
+	</context>
+
+	<context id="WMCWB122" type="test">
+		<refKColl refId="WMCWB122KColl" />
+	</context>
+
+	<context id="WMCWB1231" type="test">
+		<refKColl refId="WMCWB1231KColl" />
+	</context>
+
+	<context id="WMCWB12321Pri" type="test">
+		<refKColl refId="WMCWB12321PriKColl" />
+	</context>
+
+	<context id="WMCWB12321Imu" type="test">
+		<refKColl refId="WMCWB12321ImuKColl" />
+	</context>
+
+	<context id="WMCWB12321Asterisk" type="test">
+		<refKColl refId="WMCWB12321AsteriskKColl" />
+	</context>
+
+	<context id="WMCWB12321AsteriskNoInnerKColl" type="test">
+		<refKColl refId="WMCWB12321AsteriskKColl" />
+	</context>
+
+	<context id="WMCWB12322" type="test">
+		<refKColl refId="WMCWB12322KColl" />
+	</context>
+
+	<context id="WMCWB12323" type="test">
+		<refKColl refId="WMCWB12323KColl" />
+	</context>
+
+	<context id="WMCWB1241" type="test">
+		<refKColl refId="WMCWB1241KColl" />
+	</context>
+
+	<context id="WMCWB1242" type="test">
+		<refKColl refId="WMCWB1242KColl" />
+	</context>
+
+	<context id="WMCWB1243" type="test">
+		<refKColl refId="WMCWB1243KColl" />
+	</context>
+
+	<context id="WMCWB1244" type="test">
+		<refKColl refId="WMCWB1244KColl" />
+	</context>
+
+	<context id="WMCWB1244CompleteMatch" type="test">
+		<refKColl refId="WMCWB1244CompleteMatch" />
+	</context>
+
+	<context id="WMCWB1251" type="test">
+		<refKColl refId="WMCWB1251KColl" />
+	</context>
+
+	<context id="WMCWB1252" type="test">
+		<refKColl refId="WMCWB1252KColl" />
+	</context>
+
+	<context id="WMCWB1253" type="test">
+		<refKColl refId="WMCWB1253KColl" />
+	</context>
+
+	<context id="WMCWB1254" type="test">
+		<refKColl refId="WMCWB1254KColl" />
+	</context>
+
+	<context id="WMCWB1254BColl" type="test">
+		<refKColl refId="WMCWB1254BeanColl" />
+	</context>
+
+	<context id="WMCWB1254KCollCtxt" type="test">
+		<refKColl refId="WMCWB1254KeyedColl" />
+	</context>
+	
+	<context id="opCtx" type="test">
+		<refKColl refId="opKColl" />
+	</context>
+
+</context.xml>

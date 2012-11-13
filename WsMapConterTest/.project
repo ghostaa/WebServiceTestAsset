@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>WsMapConterTest</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<variableList>
+		<variable>
+			<name>BTTcore</name>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/WebService/EveryDayBuild/BTTCore.zip</value>
+		</variable>
+		<variable>
+			<name>bttcore</name>
+			<value>$%7BPARENT-1-BTTcore%7D/bttcore.jar</value>
+		</variable>
+		<variable>
+			<name>bttwssvc</name>
+			<value>$%7BPARENT-1-BTTcore%7D/bttwssvc.jar</value>
+		</variable>
+		<variable>
+			<name>bttwssvcsrc</name>
+			<value>$%7BPARENT-1-bttcore%7D/bttwssvcsrc.zip</value>
+		</variable>
+	</variableList>
+</projectDescription>

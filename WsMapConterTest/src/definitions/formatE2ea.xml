@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<formatE2ea.xml>
+	<!-- primitive type data -->
+	<fmtDef id="primitiveTypeFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="primitiveLa" to="*" byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeDftByRefAppendFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="primitiveLa" to="*" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeByRefFalseFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="primitiveLa" to="*" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeAppendFalseFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="primitiveLa" to="*" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeAppendTrueFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="primitiveLa" to="*" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- simple type data -->
+	<fmtDef id="simpleTypeFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="simpleLa" to="*" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeDftByRefAppendFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="simpleLa" to="*" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeByRefFalseFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="simpleLa" to="*" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendFalseFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="simpleLa" to="*" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendTrueFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="simpleLa" to="*" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- complex type data -->
+	<fmtDef id="complexTypeFmt">
+		<wsMapperConverter dataName="complexLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="complexLa" to="*" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeDftByRefAppendFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="complexLa" to="*" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeByRefFalseFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="complexLa" to="*" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendFalseFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="complexLa" to="*" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendTrueFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="complexLa" to="*" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- ===================================================================== -->
+	<!-- primitive type revert data -->
+	<fmtDef id="primitiveTypeRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="*" to="primitiveLa" byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeDftByRefAppendRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="*" to="primitiveLa" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeByRefFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="*" to="primitiveLa" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeAppendFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="*" to="primitiveLa" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeAppendTrueRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBean">
+			<map from="*" to="primitiveLa" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- simple type revert data -->
+	<fmtDef id="simpleTypeRevertFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="*" to="simpleLa" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeDftByRefAppendRevertFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="*" to="simpleLa" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeByRefFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="*" to="simpleLa" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="*" to="simpleLa" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendTrueRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBean">
+			<map from="*" to="simpleLa" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- complex type revert data -->
+	<fmtDef id="complexTypeRevertFmt">
+		<wsMapperConverter dataName="complexLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="*" to="complexLa" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeDftByRefAppendRevertFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="*" to="complexLa" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeByRefFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="*" to="complexLa" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="*" to="complexLa" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendTrueRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBean">
+			<map from="*" to="complexLa" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+
+	<!-- primitive type list revert data -->
+	<fmtDef id="primitiveTypeListRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="*" to="primitiveLa" byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeListDftByRefAppendRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="*" to="primitiveLa" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeListByRefFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="*" to="primitiveLa" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeListAppendFalseRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="*" to="primitiveLa" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeListAppendTrueRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="*" to="primitiveLa" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="simpleTypeListRevertFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="*" to="simpleLa" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeDftByRefAppendListRevertFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="*" to="simpleLa" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeByRefFalseListRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="*" to="simpleLa" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendFalseListRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="*" to="simpleLa" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendTrueListRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="*" to="simpleLa" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="complexTypeListRevertFmt">
+		<wsMapperConverter dataName="complexLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="*" to="complexLa" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeDftByRefAppendListRevertFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="*" to="complexLa" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeByRefFalseListRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="*" to="complexLa" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendFalseListRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="*" to="complexLa" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendTrueListRevertFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="*" to="complexLa" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- ===================================================================== -->
+	<!-- List -->
+	<!-- primitive type data -->
+	<fmtDef id="primitiveTypeListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="primitiveLa" to="*" byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeDftByRefAppendListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="primitiveLa" to="*" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeByRefFalseListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="primitiveLa" to="*" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeAppendFalseListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="primitiveLa" to="*" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="primitiveTypeAppendTrueListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaPrimitiveTypeBeanList">
+			<map from="primitiveLa" to="*" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- simple type data -->
+	<fmtDef id="simpleTypeListFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="simpleLa" to="*" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeDftByRefAppendListFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="simpleLa" to="*" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeByRefFalseListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="simpleLa" to="*" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendFalseListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="simpleLa" to="*" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="simpleTypeAppendTrueListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaSimpleTypeBeanList">
+			<map from="simpleLa" to="*" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- complex type data -->
+	<fmtDef id="complexTypeListFmt">
+		<wsMapperConverter dataName="complexLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="complexLa" to="*" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeDftByRefAppendListFmt">
+		<wsMapperConverter dataName="simpleLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="complexLa" to="*" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeByRefFalseListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="complexLa" to="*" byReference="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendFalseListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="complexLa" to="*" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="complexTypeAppendTrueListFmt">
+		<wsMapperConverter dataName="primitiveLaData" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.E2eaComplexTypeBeanList">
+			<map from="complexLa" to="*" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+</formatE2ea.xml>

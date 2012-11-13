@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data.xml>
+	<kColl id="WMCBW1111" dynamic="false">
+		<field id="field1" value="value1" description="Descriptions for this field" />
+	</kColl>
+
+	<kColl id="WMCBW1112" dynamic="true">
+		<field id="field1" value="value1" description="Descriptions for this field" />
+		<field id="field2" value="1048576" description="Descriptions for this field" />
+		<field id="field3" value="1048.576" description="Descriptions for this field" />
+	</kColl>
+
+	<kColl id="WMCBW11131">
+		<iColl id="WMCBW11131IColl" size="3">
+			<field id="fieldInIcoll" value="value4innerIcollField" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCBW11132">
+		<iColl id="WMCBW11132IColl" size="9">
+			<refData refId="WMCBW1112" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCBW11141">
+		<bColl id="WMCBW11141BColl" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11141" />
+	</kColl>
+
+	<kColl id="WMCBW11142">
+		<bColl id="WMCBW11142BColl" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11142" />
+	</kColl>
+
+	<data id="WMCBW11151" refType="IntNumber">
+		<param id="initialValue" value="1048576" />
+	</data>
+
+	<kColl id="WMCBW11151KColl" dynamic="false">
+		<refData refId="WMCBW11151" />
+	</kColl>
+
+	<data id="WMCBW11152" refType="String"  value="LvShuangTao" />
+
+	<kColl id="WMCBW11152KColl" dynamic="false">
+		<refData refId="WMCBW11152" />
+	</kColl>
+
+	<kColl id="WMCBW1116KColl">
+		<data id="WMCBW1116" refType="WMCBW1116" />
+	</kColl>
+
+	<kColl id="WMCBW1116PartConvTypeWSKColl">
+		<data id="WMCBW1116PartConvTypeWS" refType="WMCBW1116PartConvTypeWS" />
+	</kColl>
+
+	<kColl id="WMCBW1117KColl">
+		<data id="WMCBW1117" refType="WMCBW1117">
+			<param id="size" value="3" />
+		</data>
+	</kColl>
+
+	<kColl id="WMCBW1117PartConvTypeWSKColl">
+		<data id="WMCBW1117PartConvTypeWS" refType="WMCBW1117PartConvTypeWS">
+			<param id="size" value="3" />
+		</data>
+	</kColl>
+
+	<kColl id="WMCBW112111KColl">
+		<kColl id="levelOneKColl">
+			<iColl id="levelTwoIColl" size="3">
+				<field id="strField" value="A_String_Value!" />
+			</iColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCBW1121121KColl">
+		<kColl id="levelOneKColl">
+			<iColl id="levelTwoIColl" size="3">
+				<kColl id="levelThreeKColl">
+					<field id="strField" value="A_String_Value!" />
+					<field id="intField" value="123456" />
+					<field id="doubleField" value="123456.789" />
+				</kColl>
+			</iColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCBW112113KColl">
+		<kColl id="levelOneKColl">
+			<iColl id="levelTwoIColl" size="2">
+				<iColl id="levelThreeIColl" size="3">
+					<kColl id="levelFourKColl">
+						<field id="strField" value="A_String_Value!" />
+						<field id="intField" value="123456" />
+						<field id="doubleField" value="123456.789" />
+					</kColl>
+				</iColl>
+			</iColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCBW112121KColl">
+		<kColl id="levelOneKColl">
+			<kColl id="levelTwoKColl">
+				<field id="strField" value="A_String_Value!" />
+				<field id="intField" value="123456" />
+				<field id="doubleField" value="123456.789" />
+			</kColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCBW112122KColl">
+		<kColl id="levelOneKColl">
+			<kColl id="levelTwoKColl">
+				<iColl id="levelThreeIColl" size="5">
+					<field id="doubleField" value="123456.789" />
+				</iColl>
+			</kColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCBW11213KColl">
+		<kColl id="levelOneKColl">
+			<data id="WMCBW11213" refType="WMCBW11213">
+			</data>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCBW11214KColl">
+		<kColl id="levelOneKColl">
+			<data id="WMCBW11214" refType="WMCBW11214">
+				<param id="size" value="5" />
+			</data>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCBW112222KColl">
+		<iColl id="levelOneIColl" size="2">
+			<iColl id="levelTwoIColl" size="3">
+				<iColl id="levelThreeIColl" size="2">
+					<field id="floatField" value="1234567.890" />
+				</iColl>
+			</iColl>
+		</iColl>
+	</kColl>
+
+	<bColl id="WMCBW11223" bean="com.ibm.btt.wsc.mapper.beans.BWFromBeanSimple" />
+	<kColl id="WMCBW11223KColl" dynamic="false">
+		<iColl id="levelOneIColl" size="3">
+			<refData refId="WMCBW11223" />
+		</iColl>
+	</kColl>
+
+	<bColl id="WMCBW11231" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11231" />
+	<kColl id="WMCBW11231KColl" dynamic="false">
+		<refData refId="WMCBW11231" />
+	</kColl>
+
+	<kColl id="WMCWB121KColl">
+		<field id="intDestField" value="NULL" />
+		<field id="longDestField" value="NULL" />
+		<field id="charDestField" value="NULL" />
+		<field id="shortDestField" value="NULL" />
+		<field id="floatDestField" value="NULL" />
+		<field id="doubleDestField" value="NULL" />
+		<field id="booleanDestField" value="NULL" />
+		<field id="byteDestField" value="NULL" />
+	</kColl>
+
+	<kColl id="WMCWB122KColl">
+		<field id="booleanDestField" value="NULL" />
+		<field id="byteDestField" value="NULL" />
+		<field id="characterDestField" value="NULL" />
+		<field id="doubleDestField" value="NULL" />
+		<field id="floatDestField" value="NULL" />
+		<field id="integerDestField" value="NULL" />
+		<field id="longDestField" value="NULL" />
+		<field id="shortDestField" value="NULL" />
+		<field id="stringDestField" value="NULL" />
+	</kColl>
+
+	<kColl id="WMCWB1231KColl">
+		<field id="bigDecimalDestField" value="NULL" />
+		<field id="bigIntegerDestField" value="NULL" />
+		<field id="calendarDestField" value="NULL" />
+		<field id="dateDestField" value="NULL" />
+	</kColl>
+
+	<kColl id="WMCWB12321PriKColl">
+		<kColl id="PrimitiveKColl">
+			<field id="booleanDestField" value="NULL" />
+			<field id="byteDestField" value="NULL" />
+			<field id="charDestField" value="NULL" />
+			<field id="doubleDestField" value="NULL" />
+			<field id="floatDestField" value="NULL" />
+			<field id="intDestField" value="NULL" />
+			<field id="longDestField" value="NULL" />
+			<field id="shortDestField" value="NULL" />
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCWB12321ImuKColl">
+		<kColl id="ImmutableKColl" dynamic="true">
+			<field id="booleanDestField" value="NULL" />
+			<field id="byteDestField" value="NULL" />
+			<field id="characterDestField" value="NULL" />
+			<field id="doubleDestField" value="NULL" />
+			<field id="floatDestField" value="NULL" />
+			<field id="integerDestField" value="NULL" />
+			<field id="longDestField" value="NULL" />
+			<field id="shortDestField" value="NULL" />
+			<field id="stringDestField" value="NULL" />
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCWB12321AsteriskKColl">
+		<kColl id="InnerKColl" dynamic="true">
+			<field id="booleanField" value="NULL" />
+			<field id="byteField" value="NULL" />
+			<field id="characterField" value="NULL" />
+			<field id="doubleField" value="NULL" />
+			<field id="floatField" value="NULL" />
+			<field id="integerField" value="NULL" />
+			<field id="longField" value="NULL" />
+			<field id="shortField" value="NULL" />
+			<field id="stringField" value="NULL" />
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCWB12321AsteriskNoInnerKColl">
+		<field id="booleanField" value="NULL" />
+		<field id="byteField" value="NULL" />
+		<field id="characterField" value="NULL" />
+		<field id="doubleField" value="NULL" />
+		<field id="floatField" value="NULL" />
+		<field id="integerField" value="NULL" />
+		<field id="longField" value="NULL" />
+		<field id="shortField" value="NULL" />
+		<field id="stringField" value="NULL" />
+	</kColl>
+
+	<kColl id="WMCWB12322KColl">
+		<kColl id="MutableKColl" dynamic="false">
+			<field id="dateDestField" value="NULL" />
+			<field id="calendarDestField" value="NULL" />
+			<iColl id="listDestField" size="0">
+				<field id="anId" value="NULL" />
+			</iColl>
+			<field id="setDestField" value="NULL" />
+			<field id="mapDestField" value="NULL" />
+		</kColl>
+	</kColl>
+
+	<kColl id="innerInner">
+		<field id="theInnerInnerName" value="NULL" />
+		<field id="theInnerInnerBool" value="NULL" />
+		<field id="theInnerInnerBd" value="NULL" />
+	</kColl>
+
+	<kColl id="inner">
+		<field id="inCome" value="NULL" />
+		<field id="inHist" value="NULL" />
+		<field id="startCal" value="NULL" />
+		<refData refId="innerInner" />
+		<iColl id="theInnerStrArray" size="0">
+			<field id="strInArray" value="NULL" />
+		</iColl>
+		<iColl id="theInnerInnerArray" size="0">
+			<refData refId="innerInner" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB12323KColl">
+		<kColl id="WMCWB12323">
+			<field id="uuid" value="NULL" />
+			<field id="theName" value="NULL" />
+			<field id="theAge" value="NULL" />
+			<field id="theBirth" value="NULL" />
+			<iColl id="theStrArray" size="3">
+				<field id="strInArray" value="NULL" />
+			</iColl>
+			<iColl id="theIntArray" size="3">
+				<field id="intInArray" value="NULL" />
+			</iColl>
+			<iColl id="theDateArray" size="3">
+				<field id="dateInArray" value="NULL" />
+			</iColl>
+			<refData refId="inner" />
+			<iColl id="innerArray" size="1">
+				<refData refId="inner" />
+			</iColl>
+		</kColl>
+	</kColl>
+
+	<kColl id="WMCWB1241KColl">
+		<iColl id="innerIColl" size="0">
+			<field id="intField" value="90" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1242KColl">
+		<iColl id="innerIColl" size="4">
+			<field id="strField" value="*****" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1243KColl">
+		<iColl id="innerIColl" size="5">
+			<field id="dateField" value="NULL" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1244KColl">
+		<iColl id="innerIColl" size="5">
+			<kColl id="WMCWB1244">
+				<field id="intField" value="90" />
+				<field id="strField" value="NULL" />
+				<field id="dateField" value="NULL" />
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1244CompleteMatch">
+		<iColl id="innerIColl" size="5">
+			<kColl id="WMCWB1244CompleteMatch">
+				<field id="intSrcField" value="90" />
+				<field id="strSrcField" value="NULL" />
+				<field id="dateSrcField" value="NULL" />
+				<kColl id="beanSrcCollection">
+					<field id="intSrcField" value="90" />
+					<field id="strSrcField" value="NULL" />
+					<field id="dateSrcField" value="NULL" />
+				</kColl>
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1251KColl">
+		<iColl id="innerIColl" size="0">
+			<field id="intField" value="90" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1252KColl">
+		<iColl id="innerIColl" size="4">
+			<field id="strField" value="*****" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1253KColl">
+		<iColl id="innerIColl" size="5">
+			<field id="dateField" value="NULL" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1254KColl">
+		<iColl id="innerIColl" size="5">
+			<kColl id="WMCWB1254">
+				<field id="intField" value="90" />
+				<field id="strField" value="NULL" />
+				<field id="dateField" value="NULL" />
+			</kColl>
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1254BeanColl">
+		<iColl id="innerIColl" size="5">
+			<bColl id="WMCWB1244NullDefault" bean="com.ibm.btt.wsc.mapper.beans.WMCWB1244NullDefault" />
+		</iColl>
+	</kColl>
+
+	<kColl id="WMCWB1254KeyedColl">
+		<iColl id="innerIColl" size="5">
+			<kColl id="WMCWB1244NullDefault">
+				<field id="intSrcField" value="9010" />
+				<field id="strSrcField" value="NULL_STR" />
+				<field id="dateSrcField" value="NULL_DATE" />
+			</kColl>
+		</iColl>
+	</kColl>
+
+
+	<!-- ====================================================================== -->
+	<!-- Operation Common KColl -->
+	<!-- ====================================================================== -->
+	<kColl id="testbean3" dynamic="true">
+		<field id="field1"/>
+		<field id="field0"/>
+	</kColl>
+	<kColl id="testbean2" dynamic="true">
+		<iColl id="bean" size ="3">
+			<refData refId="testbean3"/>
+		</iColl>
+	</kColl>
+	<kColl id="testbean1" dynamic="true">
+		<iColl id="bean" size ="7">
+			<refData refId="testbean2"/>
+		</iColl>
+	</kColl>
+	<kColl id="testbean0" dynamic="true">
+		<iColl id="bean" size ="5">
+			<refData refId="testbean1"/>
+		</iColl>
+	</kColl>
+
+	<!-- ====================================================================== -->
+	<!-- Operation Data -->
+	<!-- ====================================================================== -->
+	<kColl id="opKColl">
+		<refData alias="returnType" refId="testbean0"/>
+	</kColl>
+
+</data.xml>

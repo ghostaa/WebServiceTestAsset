@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<format.xml>
+	<fmtDef id="WMCBW1111">
+		<wsMapperConverter dataName="WMCBW1111" isPrimitive="false"
+			javaClass="java.lang.String">
+			<map from="field1" to="*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1111Character">
+		<wsMapperConverter dataName="WMCBW1111" isPrimitive="false"
+			javaClass="java.lang.Character">
+			<map from="field1" to="*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1111Integer">
+		<wsMapperConverter dataName="WMCBW1111" isPrimitive="false"
+			javaClass="java.lang.Integer">
+			<map from="field1" to="*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1111Boolean">
+		<wsMapperConverter dataName="WMCBW1111" isPrimitive="false"
+			javaClass="java.lang.Boolean">
+			<mapper from="field1" to="*" byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1111Pri">
+		<wsMapperConverter dataName="WMCBW1111" isPrimitive="true"
+			javaClass="int">
+			<mapper from="field1" to="*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1111Err">
+		<wsMapperConverter dataName="WMCBW1111" isPrimitive="false"
+			javaClass="NOT_A_VALID_JAVA_CLASS">
+			<mapper from="field1" to="*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1112">
+		<wsMapperConverter dataName="WMCBW1112" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1112">
+			<mapper from="field1" to="field1" convType="ws" byReference="true"
+				append="false" />
+			<mapper from="field2" to="field2" convType="default"
+				byReference="true" append="OTHER_VALUE" />
+			<mapper from="field3" to="field3" convType="NO_SUCH_CONV_TYPE"
+				byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="java.lang.String[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131List">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="java.util.List[java.lang.String]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Boolean">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="boolean[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131BooleanList">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Boolean]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Byte">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="byte[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Char">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="char[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Double">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="double[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131DoubleList">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Double]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Float">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="float[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Int">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="int[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131IntList">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Integer]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Long">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="long[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131LongList">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Long]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11131Short">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="short[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11132">
+		<wsMapperConverter dataName="WMCBW11132"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1112[]">
+			<mapper from="WMCBW11132IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11132List">
+		<wsMapperConverter dataName="WMCBW11132"
+			isPrimitive="false" javaClass="java.util.List[com.ibm.btt.wsc.mapper.beans.WMCBW1112]">
+			<mapper from="WMCBW11132IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11141">
+		<wsMapperConverter dataName="WMCBW11141"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11141">
+			<!-- is this style supported by ws mapper? -->
+			<!-- mapper from="WMCBW11141BColl.*" to="*" convType="ws" byReference="false" 
+				append="true" / -->
+			<!-- supportted right now: see "WMCBW11141Asteric" -->
+
+			<mapper from="WMCBW11141BColl.intPrimitiveField" to="intPrimitiveField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.longPrimitiveField" to="longPrimitiveField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.charPrimitiveField" to="charPrimitiveField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.shortPrimitiveField" to="shortPrimitiveField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.floatPrimitiveField" to="floatPrimitiveField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.doublePrimitiveField" to="doublePrimitiveField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.booleanPrimitiveField" to="booleanPrimitiveField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.bytePrimitiveField" to="bytePrimitiveField"
+				convType="ws" byReference="false" append="true" />
+
+			<mapper from="WMCBW11141BColl.booleanField" to="booleanField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.characterField" to="characterField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.byteField" to="byteField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.doubleField" to="doubleField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.floatField" to="floatField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.integerField" to="integerField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.longField" to="longField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.shortField" to="shortField"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11141BColl.stringField" to="stringField"
+				convType="ws" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11141Asterisk">
+		<wsMapperConverter dataName="WMCBW11141"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11141">
+			<mapper from="WMCBW11141BColl" to="*" convType="ws"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11142">
+		<wsMapperConverter dataName="WMCBW11142"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11142">
+			<mapper from="WMCBW11142BColl.date" to="date" convType="ws"
+				byReference="true" append="true" />
+			<mapper from="WMCBW11142BColl.calendar" to="calendar"
+				convType="ws" byReference="true" append="true" />
+			<mapper from="WMCBW11142BColl.list" to="list" convType="ws"
+				byReference="true" append="true" />
+			<mapper from="WMCBW11142BColl.set" to="set" convType="ws"
+				byReference="true" append="true" />
+			<mapper from="WMCBW11142BColl.map" to="map" convType="ws"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11142Clone">
+		<wsMapperConverter dataName="WMCBW11142"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11142">
+			<mapper from="WMCBW11142BColl.date" to="date" convType="ws"
+				byReference="false" append="true" />
+			<mapper from="WMCBW11142BColl.calendar" to="calendar"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW11142BColl.list" to="list" convType="ws"
+				byReference="false" append="true" />
+			<mapper from="WMCBW11142BColl.set" to="set" convType="ws"
+				byReference="false" append="true" />
+			<mapper from="WMCBW11142BColl.map" to="map" convType="ws"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11151">
+		<wsMapperConverter dataName="WMCBW11151KColl"
+			isPrimitive="false" javaClass="java.lang.Integer">
+			<mapper from="WMCBW11151" to="*" convType="ws" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11151NoConvType">
+		<wsMapperConverter dataName="WMCBW11151KColl"
+			isPrimitive="false" javaClass="java.lang.Integer">
+			<mapper from="WMCBW11151" to="*" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11151WrongConvType">
+		<wsMapperConverter dataName="WMCBW11151KColl"
+			isPrimitive="false" javaClass="java.lang.Integer">
+			<mapper from="WMCBW11151" to="*" convType="NOT_EXIST"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11152">
+		<wsMapperConverter dataName="WMCBW11152KColl"
+			isPrimitive="false" javaClass="java.lang.String">
+			<mapper from="WMCBW11152" to="*" convType="ws" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1116">
+		<wsMapperConverter dataName="WMCBW1116KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1116">
+			<mapper from="WMCBW1116.strMandatory" to="strMandatory"
+				convType="ws" byReference="false" append="true" />
+			<mapper from="WMCBW1116.intOptional" to="intOptional"
+				convType="ws" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1116PartConvTypeWS">
+		<wsMapperConverter dataName="WMCBW1116KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1116PartConvTypeWS">
+			<mapper from="WMCBW1116PartConvTypeWS.strMandatory" to="strMandatory"
+				convType="ws" byReference="true" append="true" />
+			<mapper from="WMCBW1116PartConvTypeWS.strNoWsConvMandatory"
+				to="strNoWsConvMandatory" convType="ws" byReference="true" append="true" />
+			<mapper from="WMCBW1116PartConvTypeWS.strOptional" to="strOptional"
+				convType="ws" byReference="true" append="true" />
+			<mapper from="WMCBW1116PartConvTypeWS.intOptional" to="intOptional"
+				convType="ws" byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1117">
+		<wsMapperConverter dataName="WMCBW1117KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1116[]">
+			<mapper from="WMCBW1117.*.strMandatory" to="array.*.strMandatory"
+				convType="ws" byReference="true" append="false" />
+			<mapper from="WMCBW1117.*.intOptional" to="array.*.intOptional"
+				convType="ws" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1117PartConvTypeWS">
+		<wsMapperConverter dataName="WMCBW1117PartConvTypeWSKColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1116PartConvTypeWS[]">
+			<mapper from="WMCBW1117PartConvTypeWS.*.strMandatory" to="array.*.strMandatory"
+				convType="ws" byReference="true" append="false" />
+			<mapper from="WMCBW1117PartConvTypeWS.*.strNoWsConvMandatory"
+				to="array.*.strNoWsConvMandatory" convType="ws" byReference="true"
+				append="ignore" />
+			<mapper from="WMCBW1117PartConvTypeWS.*.strOptional" to="array.*.strOptional"
+				convType="ws" byReference="true" append="ignore" />
+			<mapper from="WMCBW1117PartConvTypeWS.*.intOptional" to="array.*.intOptional"
+				convType="ws" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW112111">
+		<wsMapperConverter dataName="WMCBW112111KColl"
+			isPrimitive="false" javaClass="java.lang.String[]">
+			<mapper from="levelOneKColl.levelTwoIColl.*" to="array.*"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW1121121">
+		<wsMapperConverter dataName="WMCBW112111KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1121121[]">
+			<mapper from="levelOneKColl.levelTwoIColl.*" to="array.*"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW112113">
+		<wsMapperConverter dataName="WMCBW112113KCollKColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1121121[]">
+			<!-- mapper from="levelOneKColl.levelTwoIColl.0.*" to="array.*" byReference="true" 
+				append="true" / -->
+			<mapper from="levelOneKColl.levelTwoIColl.0.*" to="array.*"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW112121">
+		<wsMapperConverter dataName="WMCBW112121KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1112">
+			<mapper from="levelOneKColl.levelTwoKColl.strField" to="field1"
+				byReference="false" append="true" />
+			<mapper from="levelOneKColl.levelTwoKColl.intField" to="field2"
+				byReference="false" append="true" />
+			<mapper from="levelOneKColl.levelTwoKColl.doubleField" to="field3"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW112122">
+		<wsMapperConverter dataName="WMCBW112122KColl"
+			isPrimitive="false" javaClass="java.lang.Double[]">
+			<mapper from="levelOneKColl.levelTwoKColl.levelThreeIColl.*"
+				to="array.*" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11213">
+		<wsMapperConverter dataName="WMCBW11213KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1116">
+			<mapper from="levelOneKColl.WMCBW11213.strMandatory" to="strMandatory"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11214">
+		<wsMapperConverter dataName="WMCBW11214KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW1116[]">
+			<mapper from="levelOneKColl.WMCBW11214.*.strMandatory" to="array.*.strMandatory"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW112222">
+		<wsMapperConverter dataName="WMCBW112222KColl"
+			isPrimitive="false" javaClass="java.lang.String[]">
+			<mapper from="levelOneIColl.0.0.*" to="array.*" byReference="true"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11223">
+		<wsMapperConverter dataName="WMCBW11223KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11223[]">
+			<mapper from="levelOneIColl.*.charPrimitiveFromField" to="array.*.charPrimitiveToField"
+				byReference="true" append="false" />
+			<mapper from="levelOneIColl.*.shortPrimitiveFromField" to="array.*.shortPrimitiveToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.booleanPrimitiveFromField" to="array.*.booleanPrimitiveToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.bytePrimitiveFromField" to="array.*.bytePrimitiveToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.booleanFromField" to="array.*.booleanToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.characterFromField" to="array.*.characterToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.byteFromField" to="array.*.byteToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.shortFromField" to="array.*.shortToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.dateFromField" to="array.*.dateToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.calendarFromField" to="array.*.calendarToField"
+				byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11223TypeMisMatch">
+		<wsMapperConverter dataName="WMCBW11223KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11223[]">
+			<mapper from="levelOneIColl.*.charPrimitiveFromField" to="array.*.characterToField"
+				byReference="true" append="false" />
+			<mapper from="levelOneIColl.*.shortPrimitiveFromField" to="array.*.shortToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.booleanPrimitiveFromField" to="array.*.booleanToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.bytePrimitiveFromField" to="array.*.byteToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.booleanFromField" to="array.*.booleanPrimitiveToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.characterFromField" to="array.*.charPrimitiveToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.byteFromField" to="array.*.bytePrimitiveToField"
+				byReference="false" append="ignore" />
+			<mapper from="levelOneIColl.*.shortFromField" to="array.*.shortPrimitiveToField"
+				byReference="false" append="ignore" />
+			<!-- <mapper from="levelOneIColl.*.dateFromField" to="array.*.calendarToField" 
+				byReference="false" append="false" /> <mapper from="levelOneIColl.*.calendarFromField" 
+				to="array.*.dateToField" byReference="false" append="false" /> -->
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11231">
+		<wsMapperConverter dataName="WMCBW11231KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11231DestBean">
+			<!-- immutable classes -->
+			<mapper from="WMCBW11231.integerField" to="integerDestField"
+				byReference="true" append="ignore" />
+			<mapper from="WMCBW11231.stringField" to="stringDestField"
+				byReference="true" append="ignore" />
+			<mapper from="WMCBW11231.dateField" to="dateDestField"
+				byReference="true" append="ignore" />
+			<!-- arrays -->
+			<mapper from="WMCBW11231.integerArray" to="integerDestArray"
+				byReference="true" append="ignore" />
+			<mapper from="WMCBW11231.stringArray" to="stringDestArray"
+				byReference="true" append="ignore" />
+			<mapper from="WMCBW11231.dateArray" to="dateDestArray"
+				byReference="true" append="ignore" />
+			<!-- nest beans and arrays -->
+			<mapper from="WMCBW11231.innerBean.characterFromField" to="innerDestBean.characterToField"
+				byReference="true" append="ignore" />
+
+			<mapper from="WMCBW11231.innerBeanNull.shortPrimitiveFromField"
+				to="innerDestBeanNull.shortPrimitiveToField" byReference="true"
+				append="ignore" />
+			<mapper from="WMCBW11231.innerBeanNull.shortFromField" to="innerDestBeanNull.shortToField"
+				byReference="true" append="ignore" />
+			<mapper from="WMCBW11231.innerBeanNull.dateFromField" to="innerDestBeanNull.dateToField"
+				byReference="true" append="ignore" />
+
+			<mapper from="WMCBW11231.innerBeanArray.*.characterFromField"
+				to="innerDestBeanArray.*.characterToField" byReference="true"
+				append="ignore" />
+			<!-- 2d array -->
+			<mapper from="WMCBW11231.str2dArray" to="str2dArrayDest"
+				byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCBW11231BeanAsterisk">
+		<wsMapperConverter dataName="WMCBW11231KColl" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.WMCBW11231">
+			<mapper from="WMCBW11231" to="*" byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Int">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB121">
+			<mapper from="intField" to="intDestField" byReference="true"
+				append="true" />
+			<mapper from="longField" to="longDestField" byReference="true"
+				append="true" />
+			<mapper from="charField" to="charDestField" byReference="true"
+				append="true" />
+			<mapper from="shortField" to="shortDestField" byReference="true"
+				append="true" />
+			<mapper from="floatField" to="floatDestField" byReference="true"
+				append="true" />
+			<mapper from="doubleField" to="doubleDestField" byReference="true"
+				append="true" />
+			<mapper from="booleanField" to="booleanDestField" byReference="true"
+				append="true" />
+			<mapper from="byteField" to="byteDestField" byReference="true"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+
+	<fmtDef id="WMCWB121Int">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="int">
+			<mapper from="WMCWB121.intField" to="intDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Long">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="long">
+			<mapper from="WMCWB121.longField" to="longDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Char">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="short">
+			<mapper from="WMCWB121.charField" to="charDestField"
+				byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Short">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="short">
+			<mapper from="WMCWB121.shortField" to="shortDestField"
+				byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Float">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="float">
+			<mapper from="WMCWB121.floatField" to="floatDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Double">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="double">
+			<mapper from="WMCWB121.doubleField" to="doubleDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Boolean">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="boolean">
+			<mapper from="WMCWB121.booleanField" to="booleanDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Byte">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="true" javaClass="byte">
+			<mapper from="WMCWB121.byteField" to="byteDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Boolean">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Boolean">
+			<mapper from="booleanField" to="booleanDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Byte">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Byte">
+			<mapper from="byteField" to="byteDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Character">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Character">
+			<mapper from="characterField" to="characterDestField"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Double">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Double">
+			<mapper from="doubleField" to="doubleDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Float">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Float">
+			<mapper from="floatField" to="floatDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Integer">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Integer">
+			<mapper from="integerField" to="integerDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Long">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Long">
+			<mapper from="longField" to="longDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122Short">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.Short">
+			<mapper from="shortField" to="shortDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB122String">
+		<wsMapperConverter dataName="WMCWB122KColl"
+			isPrimitive="false" javaClass="java.lang.String">
+			<mapper from="stringField" to="stringDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1231BigDecimal">
+		<wsMapperConverter dataName="WMCWB1231KColl"
+			isPrimitive="false" javaClass="java.math.BigDecimal">
+			<mapper from="bigDecimalField" to="bigDecimalDestField"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1231BigInteger">
+		<wsMapperConverter dataName="WMCWB1231KColl"
+			isPrimitive="false" javaClass="java.math.BigInteger">
+			<mapper from="bigIntegerField" to="bigIntegerDestField"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1231Calendar">
+		<wsMapperConverter dataName="WMCWB1231KColl"
+			isPrimitive="false" javaClass="java.util.Calendar">
+			<mapper from="calendarField" to="calendarDestField"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1231Date">
+		<wsMapperConverter dataName="WMCWB1231KColl"
+			isPrimitive="false" javaClass="java.util.Date">
+			<mapper from="dateField" to="dateDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12321Pri">
+		<wsMapperConverter dataName="WMCWB12321PriKColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB121">
+			<mapper from="booleanField" to="PrimitiveKColl.booleanDestField"
+				byReference="false" append="true" />
+			<mapper from="byteField" to="PrimitiveKColl.byteDestField"
+				byReference="false" append="true" />
+			<mapper from="charField" to="PrimitiveKColl.charDestField"
+				byReference="false" append="true" />
+			<mapper from="doubleField" to="PrimitiveKColl.doubleDestField"
+				byReference="false" append="true" />
+			<mapper from="floatField" to="PrimitiveKColl.floatDestField"
+				byReference="false" append="true" />
+			<mapper from="intField" to="PrimitiveKColl.intDestField"
+				byReference="false" append="true" />
+			<mapper from="longField" to="PrimitiveKColl.longDestField"
+				byReference="false" append="true" />
+			<mapper from="shortField" to="PrimitiveKColl.shortDestField"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12321Imu">
+		<wsMapperConverter dataName="WMCWB12321ImuKColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB122">
+			<mapper from="booleanField" to="ImmutableKColl.booleanDestField"
+				byReference="false" append="true" />
+			<mapper from="byteField" to="ImmutableKColl.byteDestField"
+				byReference="false" append="true" />
+			<mapper from="characterField" to="ImmutableKColl.characterDestField"
+				byReference="false" append="true" />
+			<mapper from="doubleField" to="ImmutableKColl.doubleDestField"
+				byReference="false" append="true" />
+			<mapper from="floatField" to="ImmutableKColl.floatDestField"
+				byReference="false" append="true" />
+			<mapper from="integerField" to="ImmutableKColl.integerDestField"
+				byReference="false" append="true" />
+			<mapper from="longField" to="ImmutableKColl.longDestField"
+				byReference="false" append="true" />
+			<mapper from="shortField" to="ImmutableKColl.shortDestField"
+				byReference="false" append="true" />
+			<mapper from="stringField" to="ImmutableKColl.stringDestField"
+				byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12321Asterisk">
+		<wsMapperConverter dataName="WMCWB12321AsteriskKColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB122">
+			<mapper from="*" to="InnerKColl" byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12321AsteriskNoInnerKColl">
+		<wsMapperConverter dataName="WMCWB12321AsteriskNoInnerKColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB122">
+			<!-- how to define the map format? Must the keyed collection be defined? -->
+			<mapper from="*" to="THE_INNER_KCOLL" byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12322">
+		<wsMapperConverter dataName="WMCWB12321ImuKColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB12322">
+			<mapper from="date" to="MutableKColl.dateDestField"
+				byReference="false" append="true" />
+			<mapper from="calendar" to="MutableKColl.calendarDestField"
+				byReference="false" append="true" />
+			<mapper from="list" to="MutableKColl.listDestField"
+				byReference="false" append="true" />
+			<mapper from="set" to="MutableKColl.setDestField" byReference="false"
+				append="true" />
+			<mapper from="map" to="MutableKColl.mapDestField" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12323">
+		<wsMapperConverter dataName="WMCWB12323KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB12323">
+			<mapper from="uuid" to="WMCWB12323.uuid" byReference="true"
+				append="true" />
+			<mapper from="theName" to="WMCWB12323.theName" byReference="true"
+				append="true" />
+			<mapper from="theAge" to="WMCWB12323.theAge" byReference="true"
+				append="true" />
+			<mapper from="theBirth" to="WMCWB12323.theBirth" byReference="true"
+				append="true" />
+			<mapper from="theStrArray.*" to="WMCWB12323.theStrArray.*"
+				byReference="true" append="false" />
+			<mapper from="theIntArray.*" to="WMCWB12323.theIntArray.*"
+				byReference="true" append="ignore" />
+			<mapper from="theDateArray.*" to="WMCWB12323.theDateArray.*"
+				byReference="true" append="ignore" />
+
+			<mapper from="inner.inCome" to="WMCWB12323.inner.inCome"
+				byReference="true" append="ignore" />
+			<mapper from="inner.inHist" to="WMCWB12323.inner.inHist"
+				byReference="true" append="ignore" />
+			<mapper from="inner.startCal" to="WMCWB12323.inner.startCal"
+				byReference="true" append="ignore" />
+			<mapper from="inner.theInnerStrArray.*" to="WMCWB12323.inner.theInnerStrArray.*"
+				byReference="true" append="false" />
+			<mapper from="inner.innerInner.theInnerInnerName" to="WMCWB12323.inner.innerInner.theInnerInnerName"
+				byReference="true" append="ignore" />
+			<mapper from="inner.innerInner.theInnerInnerBool" to="WMCWB12323.inner.innerInner.theInnerInnerBool"
+				byReference="true" append="ignore" />
+			<mapper from="inner.innerInner.theInnerInnerBd" to="WMCWB12323.inner.innerInner.theInnerInnerBd"
+				byReference="true" append="ignore" />
+			<mapper from="inner.theInnerInnerArray.*" to="WMCWB12323.inner.theInnerInnerArray.*"
+				byReference="true" append="false" />
+
+			<mapper from="innerArray.*" to="WMCWB12323.innerArray.*"
+				byReference="true" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12323Asterisk">
+		<wsMapperConverter dataName="WMCWB12323KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB12323">
+			<mapper from="*" to="WMCWB12323" byReference="true"
+				append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12323RevertAsterisk">
+		<wsMapperConverter dataName="WMCWB12323KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB12323">
+			<mapper to="*" from="WMCWB12323" byReference="true"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB12323ListRevertAsterisk">
+		<wsMapperConverter dataName="WMCWB12323KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB12323List">
+			<mapper from="WMCWB12323" to="*" byReference="true"/>
+		</wsMapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="WMCWB1241">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="int[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Append">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="int[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Boolean">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="boolean[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Byte">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="byte[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Char">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="char[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Double">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="double[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Float">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="float[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Long">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="long[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1241Short">
+		<wsMapperConverter dataName="WMCWB1241KColl"
+			isPrimitive="false" javaClass="short[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1242">
+		<wsMapperConverter dataName="WMCWB1242KColl"
+			isPrimitive="false" javaClass="java.lang.String[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1242Append">
+		<wsMapperConverter dataName="WMCWB1242KColl"
+			isPrimitive="false" javaClass="java.lang.String[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1243">
+		<wsMapperConverter dataName="WMCWB1243KColl"
+			isPrimitive="false" javaClass="java.util.Date[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1243Append">
+		<wsMapperConverter dataName="WMCWB1243KColl"
+			isPrimitive="false" javaClass="java.util.Date[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1244">
+		<wsMapperConverter dataName="WMCWB1244KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244[]">
+			<mapper from="array.*.intSrcField" to="innerIColl.*.intField"
+				byReference="false" append="ignore" />
+			<mapper from="array.*.strSrcField" to="innerIColl.*.strField"
+				byReference="false" append="ignore" />
+			<mapper from="array.*.dateSrcField" to="innerIColl.*.dateField"
+				byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1244CompleteMatch">
+		<wsMapperConverter dataName="WMCWB1244CompleteMatch"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244CompleteMatch[]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1244Append">
+		<wsMapperConverter dataName="WMCWB1244KColl"
+			isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244[]">
+			<mapper from="array.*.intSrcField" to="innerIColl.*.intField"
+				byReference="false" append="ignore" />
+			<mapper from="array.*.strSrcField" to="innerIColl.*.strField"
+				byReference="false" append="ignore" />
+			<mapper from="array.*.dateSrcField" to="innerIColl.*.dateField"
+				byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Integer]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251Boolean">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Boolean]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251Byte">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Byte]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251Char">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Character]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251Double">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Double]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251Float">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Float]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251Long">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Long]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1251Short">
+		<wsMapperConverter dataName="WMCWB1251KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.Short]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1252">
+		<wsMapperConverter dataName="WMCWB1252KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.String]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1252Append">
+		<wsMapperConverter dataName="WMCWB1252KColl"
+			isPrimitive="false" javaClass="java.util.List[java.lang.String]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1253">
+		<wsMapperConverter dataName="WMCWB1253KColl"
+			isPrimitive="false" javaClass="java.util.List[java.util.Date]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1253Append">
+		<wsMapperConverter dataName="WMCWB1253KColl"
+			isPrimitive="false" javaClass="java.util.List[java.util.Date]">
+			<mapper from="array.*" to="innerIColl.*" byReference="false"
+				append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1254">
+		<wsMapperConverter dataName="WMCWB1254KColl"
+			isPrimitive="false" javaClass="java.util.List[com.ibm.btt.wsc.mapper.beans.WMCWB1244]">
+			<mapper from="array.*.intSrcField" to="innerIColl.*.intField"
+				byReference="false" append="ignore" />
+			<mapper from="array.*.strSrcField" to="innerIColl.*.strField"
+				byReference="false" append="ignore" />
+			<mapper from="array.*.dateSrcField" to="innerIColl.*.dateField"
+				byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1254NullDefault">
+		<wsMapperConverter dataName="WMCWB1254BeanColl"
+			isPrimitive="false" javaClass="java.util.List[com.ibm.btt.wsc.mapper.beans.WMCWB1244NullDefault]">
+			<mapper from="array.*" to="innerIColl.*"
+				byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB1254NullDefaultRevert">
+		<wsMapperConverter dataName="WMCWB1254BeanColl"
+			isPrimitive="false" javaClass="java.util.List[com.ibm.btt.wsc.mapper.beans.WMCWB1244NullDefault]">
+			<mapper to="array.*" from="innerIColl.*"
+				byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+
+
+	<fmtDef id="WMCWB1254Append">
+		<wsMapperConverter dataName="WMCWB1254KColl"
+			isPrimitive="false" javaClass="java.util.List[com.ibm.btt.wsc.mapper.beans.WMCWB1244]">
+			<mapper from="array.*.intSrcField" to="innerIColl.*.intField"
+				byReference="false" append="false" />
+			<mapper from="array.*.strSrcField" to="innerIColl.*.strField"
+				byReference="false" append="ignore" />
+			<mapper from="array.*.dateSrcField" to="innerIColl.*.dateField"
+				byReference="false" append="ignore" />
+		</wsMapperConverter>
+	</fmtDef>
+	
+	<!-- ====================================================================== -->
+	<!-- Operation Format -->
+	<!-- ====================================================================== -->
+	<fmtDef id="inputFmt">
+		<wsMapperConverter isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.TestBean0">
+			<map from="returnType" to="*" byReference="true"/>
+		</wsMapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="outputFmt">
+		<wsMapperConverter isPrimitive="false" javaClass="com.ibm.btt.wsc.mapper.beans.TestBean0">
+			<map from="*" to="returnType" byReference="true"/>
+		</wsMapperConverter>
+	</fmtDef>
+	
+	
+	<!-- Cases for isPrimitive new feature -->
+	<fmtDef id="WMCWB121Int_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Integer">
+			<mapper from="intDestField" to="intDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Long_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Long">
+			<mapper from="longDestField" to="longDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Char_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Character">
+			<mapper from="charDestField" to="charDestField"
+				byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Short_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Integer">
+			<mapper from="shortDestField" to="shortDestField"
+				byReference="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Float_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Float">
+			<mapper from="floatDestField" to="floatDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Double_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Double">
+			<mapper from="doubleDestField" to="doubleDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Boolean_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Boolean">
+			<mapper from="booleanDestField" to="booleanDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="WMCWB121Byte_Pri">
+		<wsMapperConverter dataName="WMCWB121KColl"
+			isPrimitive="false" javaClass="java.lang.Byte">
+			<mapper from="byteDestField" to="byteDestField"
+				byReference="true" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="WMCBW11131IntList_Pri">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="java.util.List[java.lang.String]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	<fmtDef id="WMCBW11131Long_Pri">
+		<wsMapperConverter dataName="WMCBW11131"
+			isPrimitive="false" javaClass="long[]">
+			<mapper from="WMCBW11131IColl.*" to="array.*" convType="ws"
+				byReference="false" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+	
+</format.xml>

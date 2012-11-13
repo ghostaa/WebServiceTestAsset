@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<format.xml>
+	<fmtDef id="NEGWMC211">
+		<wsMapperConverter dataName="NEGWMC211" isPrimitive="true" javaClass="java.lang.String">
+			<mapper from="*" to="field1" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="NEGWMC212">
+		<wsMapperConverter dataName="NEGWMC212" isPrimitive="false" javaClass="">
+			<mapper from="*" to="field1" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="NEGWMC213">
+		<wsMapperConverter dataName="NEGWMC213" isPrimitive="" javaClass="">
+			<mapper from="*" to="field1" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="NEGWMC215">
+		<wsMapperConverter dataName="NEGWMC213" isPrimitive="false" javaClass="java.lang.String">
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- **************************** Exception Test ************************************* -->
+	<!-- Exception01: from element can not be found in the context -->
+	<fmtDef id="Exception01Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="java.lang.String">
+			<mapper from="NOSUCHELE" to="field1" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception02: to element can not be found in the context -->
+	<fmtDef id="Exception02Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="java.lang.String">
+			<mapper from="*" to="NOSUCHELE" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception03: map unsupported array to BTT context -->
+	<fmtDef id="Exception03Mapper">
+		<!--wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="int[]" -->
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="integer[]">
+			<mapper from="array.*" to="intIColl" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception04: map array to a simple data field -->
+	<fmtDef id="Exception04Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="int[]">
+			<mapper from="array.*" to="aSimpleField" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception05: map array to an non exist icoll -->
+	<fmtDef id="Exception05Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="int[]">
+			<mapper from="array.*" to="NON_EXIST_ICOLL" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception06: map values from BTT context to unsupported array -->
+	<fmtDef id="Exception06Mapper">
+		<!--wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="int[]" -->
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="integer[]">
+			<mapper from="intIColl" to="array.*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception07: map value of a simple field to an array -->
+	<fmtDef id="Exception07Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="int[]">
+			<mapper from="aSimpleField" to="array.*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception08: map non exist icoll value to array -->
+	<fmtDef id="Exception08Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false" javaClass="int[]">
+			<mapper from="NON_EXIST_ICOLL" to="array.*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception09: map value to non exist java class -->
+	<fmtDef id="Exception09Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="st.lv.NonExistClass">
+			<mapper from="aSimpleField" to="*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception10: map value to non exist java array class -->
+	<fmtDef id="Exception10Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="st.lv.NonExistClass[]">
+			<mapper from="intIColl" to="array.*" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<!-- Exception11: map non exist java class list to context -->
+	<fmtDef id="Exception11Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="java.util.List[st.lv.NonExistClass]">
+			<mapper from="array.*" to="intIColl" byReference="true" append="false" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="Exception12Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244CompleteMatch">
+			<mapper from="beanSrcCollection" to="aSimpleField" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="Exception13Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244CompleteMatch">
+			<mapper from="aSimpleField" to="beanSrcCollection" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="Exception14Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.UnCloneableField">
+			<mapper from="aSimpleField" to="*" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="treateSimpleMapper">
+		<wsMapperConverter dataName="treateSimpleBean" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.UnCloneableField">
+			<mapper from="ucf" to="*" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+
+	<fmtDef id="Exception15Mapper">
+		<mapperConverter>
+			<mapper from="aSimpleField" to="aSimpleField" byReference="false" append="true" />
+		</mapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="Exception16Mapper">
+		<mapperConverter>
+			<mapper from="aSimpleTypedField" to="aSimpleTypedField" byReference="false" append="true" />
+		</mapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="Exception17Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244CompleteMatch">
+			<mapper from="aSimpleTypedField" to="intSrcField" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="Exception18Mapper">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244CompleteMatch">
+			<mapper from="intSrcField" to="aSimpleTypedField" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+	
+	<fmtDef id="TreateAsFormatter">
+		<wsMapperConverter dataName="ExceptionKColl" isPrimitive="false"
+			javaClass="com.ibm.btt.wsc.mapper.beans.WMCWB1244CompleteMatch">
+			<mapper from="intSrcField" to="aSimpleTypedField" byReference="false" append="true" />
+		</wsMapperConverter>
+	</fmtDef>
+</format.xml>

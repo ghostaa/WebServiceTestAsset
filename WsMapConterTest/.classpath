@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Downloads/810 1108/lib/bttcore.jar" sourcepath="C:/Users/IBM_ADMIN/Downloads/8011 0928b/source/BTTCore.zip"/>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Downloads/810 1108/lib/bttwssvc.jar" sourcepath="C:/Users/IBM_ADMIN/Downloads/810 1108/source/bttwssvcsrc.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

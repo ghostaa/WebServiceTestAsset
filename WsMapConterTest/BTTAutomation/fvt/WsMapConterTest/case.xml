@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BTTWsMapConterTest" default="WsMapConterTestTarget" basedir=".">
+	<target name="WsMapConterTestTarget">
+		<TestUnitCase id="WsMapConterTest"
+		              jarProject="WsMapConterTest"
+		              category="fvt"
+		              jarsrc="src"
+		              testCaseClass="WsMapperTestCases"
+		              instrpath="bttwssvc.jar"
+		              jars="bttcore.jar bttwssvc.jar">
+		</TestUnitCase>
+	</target>
+</project>
