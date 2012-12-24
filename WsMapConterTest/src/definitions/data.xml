@@ -17,19 +17,23 @@
 	</kColl>
 
 	<kColl id="WMCBW11132">
-		<iColl id="WMCBW11132IColl" size="9">
-			<refData refId="WMCBW1112" />
-		</iColl>
+		<refData refId="WMCBW11132IColl" lazy="true" />
 	</kColl>
+	<iColl id="WMCBW11132IColl" size="9">
+		<refData refId="WMCBW1112" lazy="true" />
+	</iColl>
 
+	<!-- 手动修改的例子 -->
 	<kColl id="WMCBW11141">
-		<bColl id="WMCBW11141BColl" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11141" />
+		<refData refId="WMCBW11141BColl" lazy="true" />
 	</kColl>
+	<bColl id="WMCBW11141BColl" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11141" />
 
 	<kColl id="WMCBW11142">
 		<bColl id="WMCBW11142BColl" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11142" />
 	</kColl>
 
+	<!-- refData -->
 	<data id="WMCBW11151" refType="IntNumber">
 		<param id="initialValue" value="1048576" />
 	</data>
@@ -38,7 +42,7 @@
 		<refData refId="WMCBW11151" />
 	</kColl>
 
-	<data id="WMCBW11152" refType="String"  value="LvShuangTao" />
+	<data id="WMCBW11152" refType="String" value="LvShuangTao" />
 
 	<kColl id="WMCBW11152KColl" dynamic="false">
 		<refData refId="WMCBW11152" />
@@ -52,11 +56,13 @@
 		<data id="WMCBW1116PartConvTypeWS" refType="WMCBW1116PartConvTypeWS" />
 	</kColl>
 
+	<!-- 手动修改成refData -->
 	<kColl id="WMCBW1117KColl">
-		<data id="WMCBW1117" refType="WMCBW1117">
-			<param id="size" value="3" />
-		</data>
+		<refData refId="WMCBW1117" />
 	</kColl>
+	<data id="WMCBW1117" refType="WMCBW1117">
+		<param id="size" value="3" />
+	</data>
 
 	<kColl id="WMCBW1117PartConvTypeWSKColl">
 		<data id="WMCBW1117PartConvTypeWS" refType="WMCBW1117PartConvTypeWS">
@@ -84,19 +90,27 @@
 		</kColl>
 	</kColl>
 
+	<!-- refData -->
 	<kColl id="WMCBW112113KColl">
-		<kColl id="levelOneKColl">
-			<iColl id="levelTwoIColl" size="2">
-				<iColl id="levelThreeIColl" size="3">
-					<kColl id="levelFourKColl">
-						<field id="strField" value="A_String_Value!" />
-						<field id="intField" value="123456" />
-						<field id="doubleField" value="123456.789" />
-					</kColl>
-				</iColl>
-			</iColl>
-		</kColl>
+		<refData refId="levelOneKColl" lazy="true" />
 	</kColl>
+	<kColl id="levelOneKColl">
+		<refData refId="levelTwoIColl" lazy="true" />
+	</kColl>
+	<iColl id="levelTwoIColl" size="2">
+		<refData refId="levelThreeIColl" lazy="true" />
+	</iColl>
+	<iColl id="levelThreeIColl" size="3">
+		<refData refId="levelFourKColl" lazy="true" />
+	</iColl>
+	<kColl id="levelFourKColl">
+		<refData refId="strField" />
+		<refData refId="intField" />
+		<refData refId="doubleField" />
+	</kColl>
+	<field id="strField" value="A_String_Value!" />
+	<field id="intField" value="123456" />
+	<field id="doubleField" value="123456.789" />
 
 	<kColl id="WMCBW112121KColl">
 		<kColl id="levelOneKColl">
@@ -146,14 +160,15 @@
 	<bColl id="WMCBW11223" bean="com.ibm.btt.wsc.mapper.beans.BWFromBeanSimple" />
 	<kColl id="WMCBW11223KColl" dynamic="false">
 		<iColl id="levelOneIColl" size="3">
-			<refData refId="WMCBW11223" />
+			<refData refId="WMCBW11223" lazy="true" />
 		</iColl>
 	</kColl>
 
-	<bColl id="WMCBW11231" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11231" />
+	
 	<kColl id="WMCBW11231KColl" dynamic="false">
-		<refData refId="WMCBW11231" />
+		<refData refId="WMCBW11231" lazy="false" />
 	</kColl>
+	<bColl id="WMCBW11231" bean="com.ibm.btt.wsc.mapper.beans.WMCBW11231" />
 
 	<kColl id="WMCWB121KColl">
 		<field id="intDestField" value="NULL" />
@@ -260,12 +275,12 @@
 		<field id="inCome" value="NULL" />
 		<field id="inHist" value="NULL" />
 		<field id="startCal" value="NULL" />
-		<refData refId="innerInner" />
+		<refData refId="innerInner" lazy="true" />
 		<iColl id="theInnerStrArray" size="0">
 			<field id="strInArray" value="NULL" />
 		</iColl>
 		<iColl id="theInnerInnerArray" size="0">
-			<refData refId="innerInner" />
+			<refData refId="innerInner" lazy="true" />
 		</iColl>
 	</kColl>
 
@@ -284,9 +299,9 @@
 			<iColl id="theDateArray" size="3">
 				<field id="dateInArray" value="NULL" />
 			</iColl>
-			<refData refId="inner" />
+			<refData refId="inner" lazy="true" />
 			<iColl id="innerArray" size="1">
-				<refData refId="inner" />
+				<refData refId="inner" lazy="true" />
 			</iColl>
 		</kColl>
 	</kColl>
@@ -383,22 +398,22 @@
 	<!-- Operation Common KColl -->
 	<!-- ====================================================================== -->
 	<kColl id="testbean3" dynamic="true">
-		<field id="field1"/>
-		<field id="field0"/>
+		<field id="field1" />
+		<field id="field0" />
 	</kColl>
 	<kColl id="testbean2" dynamic="true">
-		<iColl id="bean" size ="3">
-			<refData refId="testbean3"/>
+		<iColl id="bean" size="3">
+			<refData refId="testbean3" lazy="true" />
 		</iColl>
 	</kColl>
 	<kColl id="testbean1" dynamic="true">
-		<iColl id="bean" size ="7">
-			<refData refId="testbean2"/>
+		<iColl id="bean" size="7">
+			<refData refId="testbean2" lazy="true" />
 		</iColl>
 	</kColl>
 	<kColl id="testbean0" dynamic="true">
-		<iColl id="bean" size ="5">
-			<refData refId="testbean1"/>
+		<iColl id="bean" size="5">
+			<refData refId="testbean1" lazy="true" />
 		</iColl>
 	</kColl>
 
@@ -406,7 +421,7 @@
 	<!-- Operation Data -->
 	<!-- ====================================================================== -->
 	<kColl id="opKColl">
-		<refData alias="returnType" refId="testbean0"/>
+		<refData alias="returnType" refId="testbean0" lazy="true" />
 	</kColl>
 
 </data.xml>
