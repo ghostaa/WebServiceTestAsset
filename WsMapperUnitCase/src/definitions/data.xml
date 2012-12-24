@@ -4,73 +4,83 @@
 
 	<!-- Context to java.util.List -->
 	<kColl id="KColl_Context2List">
-		<iColl id="IColl_Context2List" size="3">
-			<field id="elementInList" />
-		</iColl>
+		<refData refId="IColl_Context2List" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2List" size="3">
+		<field id="elementInList" />
+	</iColl>
 
 	<!-- Context to String[] -->
 	<kColl id="KColl_Context2StringArray">
-		<iColl id="IColl_Context2StringArray" size="3">
-			<field id="strField" value="A_String_Value!" />
-		</iColl>
+		<refData refId="IColl_Context2StringArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2StringArray" size="3">
+		<field id="strField" value="A_String_Value!" />
+	</iColl>
 
 	<!-- Context to int[] -->
 	<kColl id="KColl_Context2IntArray">
-		<iColl id="IColl_Context2IntArray" size="3">
-			<field id="intField" value="90" />
-		</iColl>
+		<refData refId="IColl_Context2IntArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2IntArray" size="3">
+		<field id="intField" value="90" />
+	</iColl>
 
 	<!-- Context to float[] -->
 	<kColl id="KColl_Context2FloatArray">
-		<iColl id="IColl_Context2FloatArray" size="3">
-			<field id="floatField" />
-		</iColl>
+		<refData refId="IColl_Context2FloatArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2FloatArray" size="3">
+		<field id="floatField" />
+	</iColl>
 
 	<!-- Context to long[] -->
 	<kColl id="KColl_Context2LongArray">
-		<iColl id="IColl_Context2LongArray" size="3">
-			<field id="longField" />
-		</iColl>
+		<refData refId="IColl_Context2LongArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2LongArray" size="3">
+		<field id="longField" />
+	</iColl>
 
 	<!-- Context to double[] -->
 	<kColl id="KColl_Context2DoubleArray">
-		<iColl id="IColl_Context2DoubleArray" size="3">
-			<field id="doubleField" />
-		</iColl>
+		<refData refId="IColl_Context2DoubleArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2DoubleArray" size="3">
+		<field id="doubleField" />
+	</iColl>
 
 	<!-- Context to char[] -->
 	<kColl id="KColl_Context2CharArray">
-		<iColl id="IColl_Context2CharArray" size="3">
-			<field id="charField" value="26" />
-		</iColl>
+		<refData refId="IColl_Context2CharArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2CharArray" size="3">
+		<field id="charField" value="26" />
+	</iColl>
 
 	<!-- Context to short[] -->
 	<kColl id="KColl_Context2ShortArray">
-		<iColl id="IColl_Context2ShortArray" size="3">
-			<field id="shortField" value="90" />
-		</iColl>
+		<refData refId="IColl_Context2ShortArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2ShortArray" size="3">
+		<field id="shortField" value="90" />
+	</iColl>
 
 	<!-- Context to byte[] -->
 	<kColl id="KColl_Context2ByteArray">
-		<iColl id="IColl_Context2ByteArray" size="3">
-			<field id="byteField" />
-		</iColl>
+		<refData refId="IColl_Context2ByteArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2ByteArray" size="3">
+		<field id="byteField" />
+	</iColl>
 
 	<!-- Context to boolean[] -->
 	<kColl id="KColl_Context2BooleanArray">
-		<iColl id="IColl_Context2BooleanArray" size="3">
-			<field id="booleanField" />
-		</iColl>
+		<refData refId="IColl_Context2BooleanArray" lazy="true" />
 	</kColl>
+	<iColl id="IColl_Context2BooleanArray" size="3">
+		<field id="booleanField" />
+	</iColl>
 
 	<!-- Context to String -->
 	<kColl id="KColl_Context2String">
@@ -94,157 +104,195 @@
 
 	<!-- Context to JavaBean -->
 	<kColl id="KColl_Context2JavaBean">
-		<field id="byteField" />
-		<field id="charField" />
-		<field id="shortField" />
-		<field id="intField" />
-		<field id="longField" />
-		<field id="floatField" />
-		<field id="doubleField" />
+	
+		<refData refId="byteField" lazy="true" />
+		<refData refId="charField" lazy="true" />
+		<refData refId="shortField" lazy="true" />
+		<refData refId="intField" lazy="true" />
+		<refData refId="longField" lazy="true" />
+		<refData refId="floatField" lazy="true" />
+		<refData refId="doubleField" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_ByteArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_CharArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_ShortArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_IntArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_LongArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_FloatArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_DoubleArray" lazy="true" />
 
-		<iColl id="IColl_Context2JavaBean_ByteArray" size="3">
-			<field id="byteElement" />
-		</iColl>
-		<iColl id="IColl_Context2JavaBean_CharArray" size="3">
-			<field id="charElement" />
-		</iColl>
-		<iColl id="IColl_Context2JavaBean_ShortArray" size="3">
-			<field id="shortElement" />
-		</iColl>
-		<iColl id="IColl_Context2JavaBean_IntArray" size="3">
-			<field id="intElement" />
-		</iColl>
-		<iColl id="IColl_Context2JavaBean_LongArray" size="3">
-			<field id="longElement" />
-		</iColl>
-		<iColl id="IColl_Context2JavaBean_FloatArray" size="3">
-			<field id="floatElement" />
-		</iColl>
-		<iColl id="IColl_Context2JavaBean_DoubleArray" size="3">
-			<field id="doubleElement" />
-		</iColl>
-		 
 		<field id="strObjectField" value="This is A String" />
-		
-		<iColl id="IColl_Context2JavaBean_StringArray" size="5">
-			<field id="strObjectField" value="A_String_Value" />
-		</iColl>
-		
-		<iColl id="IColl_Context2JavaBean_ArrayList" size="3">
-			<field id="elementInArrayList" />
-		</iColl>
-		
-		<kColl id="KColl_Context2JavaBean_SubJavaBean">
-			<field id="strObjectFieldInSubJavaBean"/>
-			<field id="intFieldInSubJavaBean"/>
-		</kColl>
-		
-		<iColl id="IColl_Context2JavaBean_SubJavaBeanArray" size="2">
-			<kColl id="KColl_ElementInSubJavaBean">
-				<field id="strObjectFieldInSubJavaBean"/>
-				<field id="intFieldInSubJavaBean"/>
-			</kColl>
-		</iColl>
-		
-		<iColl id="IColl_Context2JavaBean_SubJavaBeanList" size="2">
-			<kColl id="KColl_ElementInSubJavaBean">
-				<field id="strObjectFieldInSubJavaBean"/>
-				<field id="intFieldInSubJavaBean"/>
-			</kColl>
-		</iColl>
+
+		<refData refId="IColl_Context2JavaBean_StringArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_ArrayList" lazy="true" />
+		<refData refId="KColl_Context2JavaBean_SubJavaBean" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_SubJavaBeanArray" lazy="true" />
+		<refData refId="IColl_Context2JavaBean_SubJavaBeanList" lazy="true" />
+
 	</kColl>
 
+	<field id="byteField" />
+	<field id="charField" />
+	<field id="shortField" />
+	<field id="intField" />
+	<field id="longField" />
+	<field id="floatField" />
+	<field id="doubleField" />
 
-	<!-- *************For new UT cases(Object to Context)****************-->
-	
-	<!-- java.util.List to Conetxt-->
+	<iColl id="IColl_Context2JavaBean_ByteArray" size="3">
+		<field id="byteElement" />
+	</iColl>
+	<iColl id="IColl_Context2JavaBean_CharArray" size="3">
+		<field id="charElement" />
+	</iColl>
+	<iColl id="IColl_Context2JavaBean_ShortArray" size="3">
+		<field id="shortElement" />
+	</iColl>
+	<iColl id="IColl_Context2JavaBean_IntArray" size="3">
+		<field id="intElement" />
+	</iColl>
+	<iColl id="IColl_Context2JavaBean_LongArray" size="3">
+		<field id="longElement" />
+	</iColl>
+	<iColl id="IColl_Context2JavaBean_FloatArray" size="3">
+		<field id="floatElement" />
+	</iColl>
+	<iColl id="IColl_Context2JavaBean_DoubleArray" size="3">
+		<field id="doubleElement" />
+	</iColl>
+
+	<iColl id="IColl_Context2JavaBean_StringArray" size="5">
+		<field id="strObjectField" value="A_String_Value" />
+	</iColl>
+
+	<iColl id="IColl_Context2JavaBean_ArrayList" size="3">
+		<field id="elementInArrayList" />
+	</iColl>
+
+	<kColl id="KColl_Context2JavaBean_SubJavaBean">
+		<field id="strObjectFieldInSubJavaBean" />
+		<field id="intFieldInSubJavaBean" />
+	</kColl>
+
+	<iColl id="IColl_Context2JavaBean_SubJavaBeanArray" size="2">
+		<refData refId="KColl_ElementInSubJavaBean" lazy="true" />
+	</iColl>
+	<kColl id="KColl_ElementInSubJavaBean">
+		<field id="strObjectFieldInSubJavaBean" />
+		<field id="intFieldInSubJavaBean" />
+	</kColl>
+
+	<iColl id="IColl_Context2JavaBean_SubJavaBeanList" size="2">
+		<refData refId="KColl_ElementInSubJavaBean" lazy="true" />
+	</iColl>
+	<kColl id="KColl_ElementInSubJavaBean">
+		<refData refId="strObjectFieldInSubJavaBean" lazy="true" />
+		<refData refId="intFieldInSubJavaBean" lazy="true" />
+	</kColl>
+	<field id="strObjectFieldInSubJavaBean" />
+	<field id="intFieldInSubJavaBean" />
+
+	<!-- *************For new UT cases(Object to Context)**************** -->
+
+	<!-- java.util.List to Conetxt -->
 	<kColl id="KColl_List2Context">
-		<iColl id="IColl_List2Context" size="3">
-			<field id="elementInList" />
-		</iColl>
+		<refData refId="IColl_List2Context" lazy="true" />
 	</kColl>
-	
+	<iColl id="IColl_List2Context" size="3">
+		<field id="elementInList" />
+	</iColl>
+
 	<!-- String[] to Context -->
 	<kColl id="KColl_StringArray2Context">
-		<iColl id="IColl_StringArray2Context" size="5">
-			<field id="strField" />
-		</iColl>
+		<refData refId="IColl_StringArray2Context" lazy="true" />
 	</kColl>
+	<iColl id="IColl_StringArray2Context" size="5">
+		<field id="strField" />
+	</iColl>
 
 	<!-- Bean[] to Context -->
 	<kColl id="KColl_BeanArray2Context">
-		<iColl id="IColl_BeanArray2Context" size="5">
-			<kColl id="KColl_ElementInBeanArray">
-				<field id="strObjectFieldInBean"/>
-				<field id="intFieldInBean"/>
-			</kColl>
-		</iColl>
-	</kColl>	
-	
+		<refData refId="IColl_BeanArray2Context" lazy="true" />
+	</kColl>
+	<iColl id="IColl_BeanArray2Context" size="5">
+		<refData refId="KColl_ElementInBeanArray" lazy="true" />
+	</iColl>
+	<kColl id="KColl_ElementInBeanArray">
+		<field id="strObjectFieldInBean" />
+		<field id="intFieldInBean" />
+	</kColl>
+
 	<!-- byte[] to Context -->
 	<kColl id="KColl_ByteArray2Context">
-		<iColl id="IColl_ByteArray2Context" size="5">
-			<field id="byteField" />
-		</iColl>
+		<refData refId="IColl_ByteArray2Context" lazy="true" />
 	</kColl>
-	
+	<iColl id="IColl_ByteArray2Context" size="5">
+		<field id="byteField" />
+	</iColl>
+
 	<!-- char[] to Context -->
 	<kColl id="KColl_CharArray2Context">
-		<iColl id="IColl_CharArray2Context" size="5">
-			<field id="charField" />
-		</iColl>
+		<refData refId="IColl_CharArray2Context" lazy="true" />
 	</kColl>
-	
+	<iColl id="IColl_CharArray2Context" size="5">
+		<field id="charField" />
+	</iColl>
+
 	<!-- boolean[] to Context -->
 	<kColl id="KColl_BooleanArray2Context">
-		<iColl id="IColl_BooleanArray2Context" size="5">
-			<field id="booleanField" />
-		</iColl>
+		<refData refId="IColl_BooleanArray2Context" lazy="true" />
 	</kColl>
-	
+	<iColl id="IColl_BooleanArray2Context" size="5">
+		<field id="booleanField" />
+	</iColl>
+
 	<!-- short[] to Context -->
 	<kColl id="KColl_ShortArray2Context">
-		<iColl id="IColl_ShortArray2Context" size="5">
-			<field id="shortField" />
-		</iColl>
+		<refData refId="IColl_ShortArray2Context" lazy="true" />
 	</kColl>
-	
+	<iColl id="IColl_ShortArray2Context" size="5">
+		<field id="shortField" />
+	</iColl>
+
 	<!-- int[] to Context -->
 	<kColl id="KColl_IntArray2Context">
-		<iColl id="IColl_IntArray2Context" size="5">
-			<field id="intField" />
-		</iColl>
+		<refData refId="IColl_IntArray2Context" lazy="true" />
 	</kColl>
-	
+	<iColl id="IColl_IntArray2Context" size="5">
+		<field id="intField" />
+	</iColl>
+
 	<!-- long[] to Context -->
 	<kColl id="KColl_LongArray2Context">
-		<iColl id="IColl_LongArray2Context" size="5">
-			<field id="longField" />
-		</iColl>
+		<refData refId="IColl_LongArray2Context" lazy="true" />
 	</kColl>
-	
+	<iColl id="IColl_LongArray2Context" size="5">
+		<field id="longField" />
+	</iColl>
+
 	<!-- float[] to Context -->
 	<kColl id="KColl_FloatArray2Context">
-		<iColl id="IColl_FloatArray2Context" size="5">
-			<field id="floatField" />
-		</iColl>
+		<refData refId="IColl_FloatArray2Context" lazy="true" />
 	</kColl>
-	
-	<!-- double[] to Context  -->
+	<iColl id="IColl_FloatArray2Context" size="5">
+		<field id="floatField" />
+	</iColl>
+
+	<!-- double[] to Context -->
 	<kColl id="KColl_DoubleArray2Context">
-		<iColl id="IColl_DoubleArray2Context" size="5">
-			<field id="doubleField" />
-		</iColl>
+		<refData refId="IColl_DoubleArray2Context" lazy="true" />
 	</kColl>
-	
-	<!-- String to Context  -->
+	<iColl id="IColl_DoubleArray2Context" size="5">
+		<field id="doubleField" />
+	</iColl>
+
+	<!-- String to Context -->
 	<kColl id="KColl_String2Context">
 		<field id="stringObject" />
 	</kColl>
-	
-	<!-- JavaBean to  Context -->
+
+	<!-- JavaBean to Context -->
 	<kColl id="KColl_JavaBean2Context">
-		<field id="byteField" value="98"/>
+		<field id="byteField" value="98" />
 		<field id="charField" />
 		<field id="shortField" />
 		<field id="intField" />
@@ -252,56 +300,72 @@
 		<field id="floatField" />
 		<field id="doubleField" />
 
-		<iColl id="IColl_JavaBean2Context_ByteArray" size="3">
-			<field id="byteElement" />
-		</iColl>
-		<iColl id="IColl_JavaBean2Context_CharArray" size="3">
-			<field id="charElement" />
-		</iColl>
-		<iColl id="IColl_JavaBean2Context_ShortArray" size="3">
-			<field id="shortElement" />
-		</iColl>
-		<iColl id="IColl_JavaBean2Context_IntArray" size="3">
-			<field id="intElement" />
-		</iColl>
-		<iColl id="IColl_JavaBean2Context_LongArray" size="3">
-			<field id="longElement" />
-		</iColl>
-		<iColl id="IColl_JavaBean2Context_FloatArray" size="3">
-			<field id="floatElement" />
-		</iColl>
-		<iColl id="IColl_JavaBean2Context_DoubleArray" size="3">
-			<field id="doubleElement" />
-		</iColl>
-		 
+		<refData refId="IColl_JavaBean2Context_ByteArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_CharArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_ShortArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_IntArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_LongArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_FloatArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_DoubleArray" lazy="true" />
+
 		<field id="strObjectField" value="This is A String" />
-		
-		<iColl id="IColl_JavaBean2Context_StringArray" size="5">
-			<field id="strObjectField" value="A_String_Value" />
-		</iColl>
-		
-		<iColl id="IColl_JavaBean2Context_ArrayList" size="3">
-			<field id="elementInArrayList" />
-		</iColl>
-		
-		<kColl id="KColl_JavaBean2Context_SubJavaBean">
-			<field id="strObjectFieldInSubJavaBean"/>
-			<field id="intFieldInSubJavaBean"/>
-		</kColl>
-		
-		<iColl id="IColl_JavaBean2Context_SubJavaBeanArray" size="2">
-			<kColl id="KColl_ElementInSubJavaBeanArray">
-				<field id="strObjectFieldInSubJavaBean"/>
-				<field id="intFieldInSubJavaBean"/>
-			</kColl>
-		</iColl>
-		
-		<iColl id="IColl_JavaBean2Context_SubJavaBeanList" size="2">
-			<kColl id="KColl_ElementInSubJavaBeanList">
-				<field id="strObjectFieldInSubJavaBean"/>
-				<field id="intFieldInSubJavaBean"/>
-			</kColl>
-		</iColl>
+
+		<refData refId="IColl_JavaBean2Context_StringArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_ArrayList" lazy="true" />
+		<refData refId="KColl_JavaBean2Context_SubJavaBean" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_SubJavaBeanArray" lazy="true" />
+		<refData refId="IColl_JavaBean2Context_SubJavaBeanList" lazy="true" />
+
+	</kColl>
+	<iColl id="IColl_JavaBean2Context_ByteArray" size="3">
+		<field id="byteElement" />
+	</iColl>
+	<iColl id="IColl_JavaBean2Context_CharArray" size="3">
+		<field id="charElement" />
+	</iColl>
+	<iColl id="IColl_JavaBean2Context_ShortArray" size="3">
+		<field id="shortElement" />
+	</iColl>
+	<iColl id="IColl_JavaBean2Context_IntArray" size="3">
+		<field id="intElement" />
+	</iColl>
+	<iColl id="IColl_JavaBean2Context_LongArray" size="3">
+		<field id="longElement" />
+	</iColl>
+	<iColl id="IColl_JavaBean2Context_FloatArray" size="3">
+		<field id="floatElement" />
+	</iColl>
+	<iColl id="IColl_JavaBean2Context_DoubleArray" size="3">
+		<field id="doubleElement" />
+	</iColl>
+
+	<iColl id="IColl_JavaBean2Context_StringArray" size="5">
+		<field id="strObjectField" value="A_String_Value" />
+	</iColl>
+
+	<iColl id="IColl_JavaBean2Context_ArrayList" size="3">
+		<field id="elementInArrayList" />
+	</iColl>
+
+	<kColl id="KColl_JavaBean2Context_SubJavaBean">
+		<field id="strObjectFieldInSubJavaBean" />
+		<field id="intFieldInSubJavaBean" />
+	</kColl>
+
+	<iColl id="IColl_JavaBean2Context_SubJavaBeanArray" size="2">
+		<refData refId="KColl_ElementInSubJavaBeanArray" lazy="true" />
+	</iColl>
+	<kColl id="KColl_ElementInSubJavaBeanArray">
+		<field id="strObjectFieldInSubJavaBean" />
+		<field id="intFieldInSubJavaBean" />
+	</kColl>
+
+	<iColl id="IColl_JavaBean2Context_SubJavaBeanList" size="2">
+		<refData refId="KColl_ElementInSubJavaBeanList" lazy="true" />
+	</iColl>
+	<kColl id="KColl_ElementInSubJavaBeanList">
+		<field id="strObjectFieldInSubJavaBean" />
+		<field id="intFieldInSubJavaBean" />
 	</kColl>
 </data.xml>
 
